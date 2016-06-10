@@ -1,0 +1,2 @@
+# xoutputfilter
+REDAXO Addon XOutputFilter
