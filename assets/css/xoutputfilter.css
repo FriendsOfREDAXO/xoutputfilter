@@ -1,0 +1,79 @@
+/* Wrapper Auswahl show/hide für CSV-Export */
+div.exportselectcsv
+{
+	margin-left: 2.0em;
+}
+
+/* Filter Input */
+div.xoutputfilter-filter {
+    padding: 5px 15px;
+}
+div.xoutputfilter-filter div.form-group {
+    margin-right: 10px;
+}
+div.xoutputfilter-filter div.form-group label {
+    margin-right: 10px;
+}
+input.filter-text
+{
+	width: 15.0em !important;
+}
+
+/* Editiermodus Übersichten */
+[contenteditable="true"]:active,
+[contenteditable="true"]:focus
+{
+	background-color: #fff;
+	outline: auto;
+	outline-style: auto;
+	outline-color: #66afe9;
+	-webkit-box-shadow: 0px 0px 4px 0px #66afe9;
+	box-shadow: 0px 0px 4px 0px #66afe9;
+	-webkit-transition: all 0.20s ease-in-out;
+	-moz-transition: all 0.20s ease-in-out;
+	-ms-transition: all 0.20s ease-in-out;
+	-o-transition: all 0.20s ease-in-out;
+}
+
+/* Loader-Animation bei Feldänderung */
+.xoutputfilter-loader
+{
+    background: url('../xoutputfilter-loader.gif') center right no-repeat;
+}
+.xoutputfilter-wait
+{
+    cursor:progress;
+}
+
+/* Growl-Meldung */
+.growl-notice
+{
+	display: none;
+	padding: 10px 20px;
+	border-radius: 4px;
+	opacity: .70;
+	font-size: 14px;
+	position: fixed;
+	right: 40px;
+	margin: 0 auto;
+	bottom: 30px;
+}
+
+/* Fix für die Linkliste */
+.input-group select.form-control
+{
+	margin: 0 !important;
+}
+
+/* Listen als Label bei Eingabe-Formularen */
+dt label ul
+{
+	padding-left: 1.0em;
+}
+
+/* Höhe für Codemirror */
+.CodeMirror {
+    max-height: 200px !important;
+    height: 200px !important;
+    min-height: 200px !important;
+}

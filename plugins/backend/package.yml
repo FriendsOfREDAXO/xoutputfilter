@@ -1,0 +1,5 @@
+package: xoutputfilter/backend
+version: '3.0.0'
+author: 'Friends Of REDAXO'
+supportpage: github.com/FriendsOfREDAXO/xoutputfilter
+compile: 0

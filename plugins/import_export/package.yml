@@ -1,0 +1,13 @@
+package: xoutputfilter/import_export
+version: '3.0.0'
+author: 'Friends Of REDAXO'
+supportpage: github.com/FriendsOfREDAXO/xoutputfilter
+compile: 0
+
+page:
+    perm: xoutputfilter[import_export]
+    pjax: false
+
+requires:
+    packages:
+        backup: '>=2.0.0'

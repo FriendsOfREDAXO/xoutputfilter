@@ -1,0 +1,32 @@
+# plugin:xoutputfilter/languages
+
+xoutputfilter_languages = Sprachersetzungen
+
+xoutputfilter_languages_label_filter = Filter:
+xoutputfilter_languages_label_filter1 = Platzhalter
+xoutputfilter_languages_label_filter2 = Ersetzung
+xoutputfilter_languages_button_filter = Filtern
+
+xoutputfilter_languages_nodata = Keine Sprachersetzungen für diese Auswahl vorhanden!
+xoutputfilter_languages_table_header = Liste der angelegten Sprachersetzungen
+xoutputfilter_languages_id_header = Platzhalter
+xoutputfilter_languages_html_header = Ersetzung
+
+xoutputfilter_languages_really_delete = Datensatz wirklich löschen?
+xoutputfilter_languages_deleted = Sprachersetzung wurde gelöscht!
+xoutputfilter_languages_status_activated = Sprachersetzung wurde aktiviert!
+xoutputfilter_languages_status_deactivated = Sprachersetzung wurde deaktiviert!
+
+xoutputfilter_languages_add = Sprachersetzung hinzufügen
+xoutputfilter_languages_title_add = Sprachersetzung hinzufügen
+xoutputfilter_languages_title_edit = Sprachersetzung bearbeiten
+
+xoutputfilter_languages_label_marker = Platzhalter
+xoutputfilter_languages_label_html = Sprachersetzung
+xoutputfilter_languages_label_active = Aktiviert
+xoutputfilter_languages_label_excludeids = Bei folgenden Seiten-Id's nicht aktiv
+
+xoutputfilter_languages_error_no_name = Bitte geben Sie einen Platzhalter ein!
+xoutputfilter_languages_error_exists = Platzhalter existiert bereits!
+xoutputfilter_languages_error_no_html = Bitte geben Sie eine Sprachersetzung ein!
+xoutputfilter_languages_error_update = Beim speichern ist ein Fehler aufgetreten!

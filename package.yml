@@ -1,0 +1,27 @@
+package: xoutputfilter
+version: '1.0.0-beta1'
+author: 'Friends Of REDAXO'
+supportpage: https://github.com/FriendsOfREDAXO/xoutputfilter
+info: 'Idee und Realisierung der ersten Version: Andreas Eberhard/aesoft.de und Peter Bickel/polarpixel.de'
+compile: 0
+
+page:
+
+    title: 'translate:xoutputfilter_title'
+    icon: rex-icon fa-gears
+    pjax: true
+    perm: xoutputfilter[]
+
+requires:
+
+    redaxo: '>=5.0.0'
+
+system_plugins:
+    - documentation
+
+plugins:
+    - abbrev
+    - backend
+    - frontend
+    - import_export
+    - languages

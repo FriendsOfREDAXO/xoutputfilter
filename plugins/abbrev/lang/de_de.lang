@@ -1,0 +1,32 @@
+# plugin:xoutputfilter/abbrev
+
+xoutputfilter_abbrev = Abkürzungen
+
+xoutputfilter_abbrev_label_filter = Filter:
+xoutputfilter_abbrev_label_filter1 = Abkürzung
+xoutputfilter_abbrev_label_filter2 = Hinweistext
+xoutputfilter_abbrev_button_filter = Filtern
+
+xoutputfilter_abbrev_nodata = Keine Abkürzungen für diese Auswahl vorhanden!
+xoutputfilter_abbrev_table_header = Liste der angelegten Abkürzungen
+xoutputfilter_abbrev_id_header = Abkürzung
+xoutputfilter_abbrev_html_header = Hinweistext
+
+xoutputfilter_abbrev_really_delete = Datensatz wirklich löschen?
+xoutputfilter_abbrev_deleted = Abkürzung wurde gelöscht!
+xoutputfilter_abbrev_status_activated = Abkürzung wurde aktiviert!
+xoutputfilter_abbrev_status_deactivated = Abkürzung wurde deaktiviert!
+
+xoutputfilter_abbrev_add = Abkürzung hinzufügen
+xoutputfilter_abbrev_title_add = Abkürzung hinzufügen
+xoutputfilter_abbrev_title_edit = Abkürzung bearbeiten
+
+xoutputfilter_abbrev_label_marker = Abkürzung
+xoutputfilter_abbrev_label_html = Hinweistext
+xoutputfilter_abbrev_label_active = Aktiviert
+xoutputfilter_abbrev_label_excludeids = Bei folgenden Seiten-Id's nicht aktiv
+
+xoutputfilter_abbrev_error_no_name = Bitte geben Sie eine Abkürzung ein!
+xoutputfilter_abbrev_error_exists = Abkürzung existiert bereits!
+xoutputfilter_abbrev_error_no_html = Bitte geben Sie einen Hinweistext ein!
+xoutputfilter_abbrev_error_update = Beim speichern ist ein Fehler aufgetreten!
