@@ -612,7 +612,7 @@ if ($func == '')
     {
         $sqlfilter .= ' AND `marker` like \'%'.$_SESSION['xoutputfilter']['backend']['filter2'].'%\' ';
     }
-    $sql = 'SELECT `id`, `name`, `description`, `marker`, `active`, `lang`, `excludeids`, `insertbefore`, `categories` FROM ' . $table . ' WHERE `typ` = \'5\' ' . $sqlfilter . ' ORDER BY `name` ASC ';
+    $sql = 'SELECT `id`, `name`, `description`, `marker`, `active`, `lang`, `excludeids`, `insertbefore`, `categories`, `allcats`, `once` FROM ' . $table . ' WHERE `typ` = \'5\' ' . $sqlfilter . ' ORDER BY `name` ASC ';
 
     $list = rex_list::factory($sql, 30, 'backend', 0);
 
@@ -633,6 +633,8 @@ if ($func == '')
     $list->removeColumn('excludeids');
     $list->removeColumn('insertbefore');
     $list->removeColumn('categories');
+    $list->removeColumn('allcats');
+    $list->removeColumn('once');
 
     $list->setColumnLabel('name', $this->i18n('xoutputfilter_backend_name_header'));
     $list->setColumnLayout('name', ['<th>###VALUE###</th>', '<td contenteditable="true" data-title="###LABEL###" data-id="###id###" data-field="name" data-lang="###lang###" data-oldvalue="">###VALUE###</td>']);
@@ -648,14 +650,21 @@ if ($func == '')
     $list->setColumnFormat('info', 'custom', function($params) {
         $list = $params['list'];
         $title = '';
-        $title .= $this->i18n('xoutputfilter_frontend_insertbefore'.$list->getValue('insertbefore')) . ' &#10;';
-        if ($list->getValue('excludeids') <> '') {
-            $title .= $this->i18n('xoutputfilter_info_tx_excludeids') . ' ' . $list->getValue('excludeids') . ' &#10;';
-        }
+        $title .= $this->i18n('xoutputfilter_frontend_insertbefore'.$list->getValue('insertbefore')) . ' | ';
         if ($list->getValue('categories') <> '') {
-            $title .= $this->i18n('xoutputfilter_info_tx_categories') . ' ' . $list->getValue('categories') . ' &#10;';
+            $title .= $this->i18n('xoutputfilter_info_tx_modules') . ' ' . $list->getValue('categories') . ' | ';
         }
-        $str = '<i class="rex-icon fa-cogs" data-toggle="tooltip" data-placement="left" title="' . htmlspecialchars($title) . '"></i>';
+        if ($list->getValue('allcats') == '1') {
+            $title .= $this->i18n('xoutputfilter_info_tx_allmodules') . ' | ';
+        }        
+        if ($list->getValue('once') == '1') {
+            $title .= $this->i18n('xoutputfilter_info_tx_once') . ' | ';
+        }
+        if ($list->getValue('excludeids') <> '') {
+            $title .= $this->i18n('xoutputfilter_info_tx_exmodules') . ' ' . $list->getValue('excludeids') . ' | ';
+        }
+        $title = str_replace(' | ', ' &#10;', htmlspecialchars($title));
+        $str = '<i class="rex-icon fa-cogs" data-toggle="tooltip" data-placement="left" title="' . $title . '"></i>';
         return $str;
     });
 

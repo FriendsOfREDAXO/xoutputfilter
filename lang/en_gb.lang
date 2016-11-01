@@ -57,10 +57,13 @@ xoutputfilter_msg_cancel = Data has been reseted!
 
 xoutputfilter_info_header = Info
 xoutputfilter_func_header = Status/Function
-xoutputfilter_info_tx_categories = Aktiv bei folgenden Kategorien:
-xoutputfilter_info_tx_subcats = inklusive Subkategorien
-xoutputfilter_info_tx_allcats = Aktiv bei allen Kategorien
-xoutputfilter_info_tx_once = nur einmal einfügen
+xoutputfilter_info_tx_categories = Active in the following categories:
+xoutputfilter_info_tx_subcats = including subcategories
+xoutputfilter_info_tx_allcats = Active in all categories
+xoutputfilter_info_tx_modules = Active on the following backend modules
+xoutputfilter_info_tx_allmodules = Active on all backend modules
+xoutputfilter_info_tx_exmodules = Not active on the following backend modules
+xoutputfilter_info_tx_once = Only once
 xoutputfilter_info_tx_excludeids = Not for the following Page-Id's:
 
 
