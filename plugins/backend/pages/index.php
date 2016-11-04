@@ -528,10 +528,10 @@ if ($func == 'add' || $func == 'edit')
     $buttons = $fragment->parse('core/form/submit.php');
 
     if ($message) {
-        $content = rex_view::success($message) . $content;
+        echo rex_view::success($message);
     }
     if ($error) {
-        $content = rex_view::error($error) . $content;
+        echo rex_view::error($error);
     }
 
     // Forumular
