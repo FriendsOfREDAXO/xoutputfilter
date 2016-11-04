@@ -6,13 +6,13 @@ div.exportselectcsv
 
 /* Filter Input */
 div.xoutputfilter-filter {
-    padding: 5px 15px;
+	padding: 5px 15px;
 }
 div.xoutputfilter-filter div.form-group {
-    margin-right: 10px;
+	margin-right: 10px;
 }
 div.xoutputfilter-filter div.form-group label {
-    margin-right: 10px;
+	margin-right: 10px;
 }
 input.filter-text
 {
@@ -38,25 +38,17 @@ input.filter-text
 /* Loader-Animation bei Feldänderung */
 .xoutputfilter-loader
 {
-    background: url('../xoutputfilter-loader.gif') center right no-repeat;
+	background: url('../xoutputfilter-loader.gif') center right no-repeat;
 }
 .xoutputfilter-wait
 {
-    cursor:progress;
+	cursor:progress;
 }
 
 /* Growl-Meldung */
-.growl-notice
-{
-	display: none;
-	padding: 10px 20px;
+div.bootstrap-growl {
 	border-radius: 4px;
-	opacity: .70;
-	font-size: 14px;
-	position: fixed;
-	right: 40px;
-	margin: 0 auto;
-	bottom: 30px;
+	opacity: .90;
 }
 
 /* Fix für die Linkliste */
@@ -73,7 +65,7 @@ dt label ul
 
 /* Höhe für Codemirror */
 .CodeMirror {
-    max-height: 200px !important;
-    height: 200px !important;
-    min-height: 200px !important;
+	max-height: 200px !important;
+	height: 200px !important;
+	min-height: 200px !important;
 }

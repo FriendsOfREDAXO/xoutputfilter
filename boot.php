@@ -1,14 +1,15 @@
 <?php
-
 if (rex::isBackend() && is_object(rex::getUser())) {
-    
+
     $addondir = basename(__DIR__);
 
     // Addon CSS / JavaScript
     if (rex_be_controller::getCurrentPagePart(1) == 'xoutputfilter') {
         if ($this->getConfig('active') == '1') {
             rex_view::addCssFile($this->getAssetsUrl('css/xoutputfilter.css'));
+            rex_view::addCssFile($this->getAssetsUrl('css/xoutputfilter-animate.css'));
             rex_view::addJsFile($this->getAssetsUrl('js/xoutputfilter.js'));
+            rex_view::addJsFile($this->getAssetsUrl('js/xoutputfilter-notify.js'));
         }
     }
 
@@ -155,10 +156,12 @@ if ($this->getConfig('active') == '1') {
         $bp = rex_be_controller::getCurrentPagePart(1);
         if ($bp == 'system' or $bp == 'xoutputfilter') {
             rex_view::addCssFile($this->getAssetsUrl('css/xoutputfilter.css'));
+            rex_view::addCssFile($this->getAssetsUrl('css/xoutputfilter-animate.css'));
             rex_view::addJsFile($this->getAssetsUrl('js/xoutputfilter.js'));
+            rex_view::addJsFile($this->getAssetsUrl('js/xoutputfilter-notify.js'));
             rex_extension::register('OUTPUT_FILTER', function(rex_extension_point $ep){
                 $suchmuster = '</body>';
-                $ersetzen = '<script>displayGrowl("'.$this->i18n('xoutputfilter_notactive').'", 1500, "alert-warning");</script></body>';
+                $ersetzen = '<script>displayGrowl("'.$this->i18n('xoutputfilter_notactive').'", 1500, "warning");</script></body>';
                 $ep->setSubject(str_replace($suchmuster, $ersetzen, $ep->getSubject()));
             });
         }
