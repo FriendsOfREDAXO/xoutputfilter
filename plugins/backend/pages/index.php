@@ -63,11 +63,11 @@ if (!isset($_SESSION['xoutputfilter']['backend']['filter1']))
     <div class="form-group">
         <label for="rex_420_xoutputfilter_filter1"><?php echo $this->i18n('xoutputfilter_backend_label_filter1'); ?></label>
         <input id="rex_420_xoutputfilter_filter1" class="rex-form-text form-control filter-text" type="text" name="filter1" value="<?php echo $_SESSION['xoutputfilter']['backend']['filter1']; ?>" />
-    </div>    
+    </div>
     <div class="form-group">
         <label for="rex_420_xoutputfilter_filter2"><?php echo $this->i18n('xoutputfilter_backend_label_filter2'); ?></label>
         <input id="rex_420_xoutputfilter_filter2" class="rex-form-text form-control filter-text" type="text" name="filter2" value="<?php echo $_SESSION['xoutputfilter']['backend']['filter2']; ?>" />
-    </div>    
+    </div>
     <button type="submit" class="btn btn-default" name="rex_420_filter"><i class="rex-icon fa-search"></i>&nbsp;<?php echo $this->i18n('xoutputfilter_backend_button_filter'); ?></button>
     </form>
 </div>
@@ -203,7 +203,7 @@ if ($xfunc <> '') {
     $Values['active'] = trim(rex_request('active', 'string', ''));
     $Values['insertbefore'] = trim(rex_request('insertbefore', 'string', ''));
     $Values['marker'] = trim(rex_request('marker', 'string', ''));
-    $Values['html'] = trim(rex_request('html', 'string', ''));
+    $Values['html'] = rex_request('html', 'string', '');
     $Values['categories'] = rex_request('categories', 'string', '');
     $Values['allcats'] = rex_request('allcats', 'string', '');
     $Values['once'] = rex_request('once', 'string', '');
@@ -656,7 +656,7 @@ if ($func == '')
         }
         if ($list->getValue('allcats') == '1') {
             $title .= $this->i18n('xoutputfilter_info_tx_allmodules') . ' | ';
-        }        
+        }
         if ($list->getValue('once') == '1') {
             $title .= $this->i18n('xoutputfilter_info_tx_once') . ' | ';
         }
