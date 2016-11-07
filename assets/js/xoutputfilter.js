@@ -48,6 +48,9 @@ $(document).on('rex:ready', function (event, container) {
 
 	$pageurl = getUrlParameter('page'); // aktuelle Backend-Page
 
+	// Resizable Codemirror
+	$('.CodeMirror').resizable();
+
 	// Bei Focus - save oldvalue + color
 	$('td[contenteditable=true]').on('focus', function(){
 		$(this).data('oldvalue', $(this).text());

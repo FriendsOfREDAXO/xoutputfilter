@@ -65,7 +65,10 @@ dt label ul
 
 /* Höhe für Codemirror */
 .CodeMirror {
-	max-height: 200px !important;
-	height: 200px !important;
-	min-height: 200px !important;
+	height: 200px;
+	min-height: 200px;
+	border: 1px solid #c1c9d4;
+}
+.CodeMirror-scroll {
+	width: 100%;
 }
