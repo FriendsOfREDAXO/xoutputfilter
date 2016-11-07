@@ -60,9 +60,9 @@ xoutputfilter_func_header = Status/Function
 xoutputfilter_info_tx_categories = Aktiv bei folgenden Kategorien:
 xoutputfilter_info_tx_subcats = inklusive Subkategorien
 xoutputfilter_info_tx_allcats = Aktiv bei allen Kategorien
-xoutputfilter_info_tx_modules = Aktiv bei folgenden Backend-Modulen
+xoutputfilter_info_tx_modules = Aktiv bei folgenden Backend-Modulen:
 xoutputfilter_info_tx_allmodules = Aktiv bei allen Backend-Modulen
-xoutputfilter_info_tx_exmodules = Bei folgenden Backend-Modulen nicht aktiv
+xoutputfilter_info_tx_exmodules = Bei folgenden Backend-Modulen nicht aktiv:
 xoutputfilter_info_tx_once = nur einmal einfügen
 xoutputfilter_info_tx_excludeids = Bei folgenden Seiten-Id's nicht aktiv:
 
