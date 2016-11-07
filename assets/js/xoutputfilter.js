@@ -15,13 +15,32 @@ var getUrlParameter = function getUrlParameter(sParam) {
 };
 
 /* Display Growl-Message */
-function displayGrowl(message, duration, type) {
-    type = type || "alert-danger";
-	$('body').append('<div class="growl-notice alert '+type+'"></div>');
-	$('.growl-notice').html(message).fadeTo(200, 0.8);
-	setTimeout(function(){
-		$('.growl-notice').fadeOut();
-	}, duration);
+function displayGrowl(message, mduration, mtype) {
+	mduration = mduration || 3000;
+	mtype = mtype || 'danger';
+	$.notify(message, {
+		element: 'body',
+		type: mtype,
+		allow_dismiss: true,
+		placement: {from: 'bottom', align: 'right'},
+		offset: {x: 40, y: 40},
+		spacing: 10,
+		z_index: 99999,
+		delay: mduration,
+		mouse_over: 'pause',
+		animate: { enter: 'animated fadeInRight', exit: 'animated fadeOutRight' },
+		template: '' +
+		'<div data-notify="container" class="bootstrap-growl col-xs-11 col-sm-3 alert alert-{0}" role="alert">' +
+		'<button type="button" aria-hidden="true" class="close" data-notify="dismiss">×</button>' +
+		'<span data-notify="icon"></span> ' +
+		'<span data-notify="title">{1}</span> ' +
+		'<span data-notify="message">{2}</span>' +
+		'<div class="progress" data-notify="progressbar">' +
+		'   <div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>' +
+		'</div>' +
+		'<a href="{3}" target="{4}" data-notify="url"></a>' +
+		'</div>'
+	});
 }
 
 /* Editiermodus in den Übersichten für Felter mit contenteditable=true */
@@ -29,13 +48,13 @@ $(document).on('rex:ready', function (event, container) {
 
 	$pageurl = getUrlParameter('page'); // aktuelle Backend-Page
 
-    // Bei Focus - save oldvalue + color
+	// Bei Focus - save oldvalue + color
 	$('td[contenteditable=true]').on('focus', function(){
 		$(this).data('oldvalue', $(this).text());
 		$(this).data('color', $(this).css('color'));
 	});
 
-    // Handle Escape + Return
+	// Handle Escape + Return
 	$('td[contenteditable=true]').keypress(function(e){
 		if (e.keyCode == 13 || e.keyCode == 27) {
 			e.preventDefault();
@@ -44,7 +63,7 @@ $(document).on('rex:ready', function (event, container) {
 		}
 	});
 
-    // Ajax-Request bei FocousOut
+	// Ajax-Request bei FocousOut
 	$('td[contenteditable=true]').on('focusout', function(){
 		var $sender = $(this);
 		$fdata = {};
@@ -101,38 +120,38 @@ $(document).on('rex:ready', function (event, container) {
 
 	});
 
-    // Toggle status
+	// Toggle status aktiviert/deaktiviert
 	$('a.toggle').on('click', function(){
 		var $sender = $(this);
-        $($sender).addClass('xoutputfilter-wait');
-        $($sender).fadeTo(200, 0.3);
-        $fdata = {};
+		$($sender).addClass('xoutputfilter-wait');
+		$($sender).fadeTo(200, 0.3);
+		$fdata = {};
 		$fdata['href'] = $($sender).attr('href');
 		$fdata['oldvalue'] = $($sender).html();
 
-        $.ajax({
+		$.ajax({
 			type: 'GET',
 			url: $($sender).attr('href') + '&func=togglestatus',
 			cache: false,
-            data: $fdata,
+			data: $fdata,
 			dataType: 'json',
 			success: function(response)
 			{
 				if (response.error == '0') {
-                    $($sender).html(response.value);
-                    $($sender).attr('href', response.href);
+					$($sender).html(response.value);
+					$($sender).attr('href', response.href);
 				} else {
-                    $($sender).html(response.oldvalue);
+					$($sender).html(response.oldvalue);
 					displayGrowl(response.msg, 3000);
 				}
-                $($sender).removeClass('xoutputfilter-wait');
+				$($sender).removeClass('xoutputfilter-wait');
 			}
 		}).fail(function(jqXHR, textStatus) {
 			displayGrowl('Request failed: ' + textStatus, 10000);
-            $($sender).removeClass('xoutputfilter-wait');
+			$($sender).removeClass('xoutputfilter-wait');
 		});
-        $($sender).fadeTo(200, 1.0);
-        return false;
+		$($sender).fadeTo(200, 1.0);
+		return false;
 	});
 
 }); // end rex:ready
