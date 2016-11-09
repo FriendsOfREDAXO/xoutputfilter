@@ -414,7 +414,7 @@ if ($func == 'add' || $func == 'edit')
     $attributes['class'] = 'form-control';
     $field = new rex_form_select_element('select', null, $attributes);
 
-    $field->setLabel(htmlspecialchars_decode($this->i18n('xoutputfilter_abbrev_label_active')));
+    $field->setLabel(htmlspecialchars_decode($this->i18n('xoutputfilter_languages_label_active')));
     $select = $field->getSelect();
     $select->addOption($this->i18n('yes'), 1);
     $select->addOption($this->i18n('no'), 0);
@@ -709,7 +709,7 @@ if ($func == '')
 
         $str .= '<td nowrap="nowrap">';
         $list->setColumnParams('delete', ['func' => 'delete', 'oid' => '###id###']);
-        $list->addLinkAttribute('delete', 'data-confirm', '[###marker###] - ' . $this->i18n('xoutputfilter_abbrev_really_delete'));
+        $list->addLinkAttribute('delete', 'data-confirm', '[###marker###] - ' . $this->i18n('xoutputfilter_languages_really_delete'));
         $str .= $list->getColumnLink('delete', '<i class="rex-icon rex-icon-delete"></i> ' . $this->i18n('delete') . '');
         return $str;
     });
