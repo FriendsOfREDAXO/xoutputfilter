@@ -24,7 +24,7 @@ xoutputfilter_languages_title_edit = Sprachersetzung bearbeiten
 xoutputfilter_languages_label_marker = Platzhalter
 xoutputfilter_languages_label_html = Sprachersetzung
 xoutputfilter_languages_label_active = Aktiviert
-xoutputfilter_languages_label_excludeids = Bei folgenden Seiten-Id's nicht aktiv
+xoutputfilter_languages_label_excludeids = Blacklist Artikel
 
 xoutputfilter_languages_error_no_name = Bitte geben Sie einen Platzhalter ein!
 xoutputfilter_languages_error_exists = Platzhalter existiert bereits!
