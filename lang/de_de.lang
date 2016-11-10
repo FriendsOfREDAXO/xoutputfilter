@@ -23,7 +23,7 @@ xoutputfilter_config_sessioncache = Session-Cache verwenden
 xoutputfilter_config_altmenuentry = Alternativer Menüeintrag<br><p class="help-block rex-note">Berechtigung xoutputfilter[altmenuentry]</p>
 xoutputfilter_config_excludecats = Blacklist Kategorien<br><p class="help-block rex-note">Mehrfachauswahl mit <kbd>STRG</kbd> bzw. <kbd>CMD</kbd></p>
 xoutputfilter_config_excludeids = Blacklist Artikel
-xoutputfilter_config_excludepages = Blacklist Backend-Seitenn<br><p class="help-block rex-note">(kommaseparierte Liste)</p><p>z.B. <code>structure, system/settings</code></p>
+xoutputfilter_config_excludepages = Blacklist Backend-Seiten<br><p class="help-block rex-note">(kommaseparierte Liste)</p><p>z.B. <code>structure, system/settings</code></p>
 xoutputfilter_config_showalllangs = Alle Sprachen bei Sprachersetzungen anzeigen
 xoutputfilter_config_tags = öffnendes/schließendes Tag für Sprachersetzungen
 xoutputfilter_config_placeholder = Platzhalter

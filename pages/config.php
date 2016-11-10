@@ -194,9 +194,9 @@ $n['footer'] = '</div></div>';
 $n['label'] = '<label for="tagopen">' . htmlspecialchars_decode($this->i18n('xoutputfilter_config_tags')) . '</label>';
 $n['field'] = '
     <div class="input-group">
-        <input class="form-control text-right" type="text" id="tagopen" name="settings[tagopen]" value="' . $Values['tagopen'] . '" />
+        <input class="form-control text-right" type="text" id="tagopen" name="settings[tagopen]" value="' . $Values['tagopen'] . '" style="width:5.0em;" />
         <span class="input-group-addon">' . $this->i18n('xoutputfilter_config_placeholder') . '</span>
-        <input class="form-control" type="text" id="tagclose" name="settings[tagclose]" value="' . $Values['tagclose'] . '" />
+        <input class="form-control" type="text" id="tagclose" name="settings[tagclose]" value="' . $Values['tagclose'] . '"  style="width:5.0em;" />
     </div>';
 $formElements[] = $n;
 $fragment = new \rex_fragment();

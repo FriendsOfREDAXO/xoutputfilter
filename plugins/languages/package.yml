@@ -3,3 +3,7 @@ version: '3.0.0'
 author: 'Friends Of REDAXO'
 supportpage: github.com/FriendsOfREDAXO/xoutputfilter
 compile: 0
+
+conflicts:
+    packages:
+        sprog: '*'
