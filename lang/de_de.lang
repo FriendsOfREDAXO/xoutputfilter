@@ -18,14 +18,14 @@ xoutputfilter_title_developer = Informationen für Entwickler
 xoutputfilter_config_active = XOutputFilter aktiv
 xoutputfilter_config_runtimeinfo = Laufzeitinformationen ausgeben (Im HTML-Output am Ende)
 xoutputfilter_config_syslog = Informationen im Syslog protokollieren (z.B. Import, Synchronisierung)
-xoutputfilter_config_codemirror = Codemirror verwenden (plugins backend, frontend)
+xoutputfilter_config_codemirror = Codemirror verwenden (Plugins <code>backend, frontend</code>)
 xoutputfilter_config_sessioncache = Session-Cache verwenden
 xoutputfilter_config_altmenuentry = Alternativer Menüeintrag<br><p class="help-block rex-note">Berechtigung xoutputfilter[altmenuentry]</p>
-xoutputfilter_config_excludecats = Blacklist Kategorien<br><p class="help-block rex-note">Mehrfachauswahl mit <kbd>STRG</kbd> bzw. <kbd>CMD</kbd></p>
-xoutputfilter_config_excludeids = Blacklist Artikel
+xoutputfilter_config_excludecats = Blacklist-Kategorien<br><p class="help-block rex-note">Mehrfachauswahl mit <kbd>STRG</kbd> bzw. <kbd>CMD</kbd></p>
+xoutputfilter_config_excludeids = Blacklist-Artikel
 xoutputfilter_config_excludepages = Blacklist Backend-Seiten<br><p class="help-block rex-note">(kommaseparierte Liste)</p><p>z.B. <code>structure, system/settings</code></p>
-xoutputfilter_config_showalllangs = Alle Sprachen bei Sprachersetzungen anzeigen
-xoutputfilter_config_tags = öffnendes/schließendes Tag für Sprachersetzungen
+xoutputfilter_config_showalllangs = Alle Sprachen in der Übersicht anzeigen
+xoutputfilter_config_tags = Präfix / Suffix
 xoutputfilter_config_placeholder = Platzhalter
 
 xoutputfilter_config_title = Allgemein
@@ -56,24 +56,23 @@ xoutputfilter_msg_saved = Eingaben wurden gespeichert!
 xoutputfilter_msg_cancel = Eingaben wurden verworfen!
 
 xoutputfilter_info_header = Info
-xoutputfilter_func_header = Status/Function
-xoutputfilter_info_tx_categories = Aktiv bei folgenden Kategorien:
+xoutputfilter_func_header = Status/Funktion
+xoutputfilter_info_tx_categories = aktiv bei folgenden Kategorien
 xoutputfilter_info_tx_subcats = inklusive Subkategorien
-xoutputfilter_info_tx_allcats = Aktiv bei allen Kategorien
-xoutputfilter_info_tx_modules = Aktiv bei folgenden Backend-Modulen:
-xoutputfilter_info_tx_allmodules = Aktiv bei allen Backend-Modulen
-xoutputfilter_info_tx_exmodules = Bei folgenden Backend-Modulen nicht aktiv:
+xoutputfilter_info_tx_allcats = aktiv bei allen Kategorien
+xoutputfilter_info_tx_modules = aktiv bei folgenden Backend-Modulen
+xoutputfilter_info_tx_allmodules = aktiv bei allen Backend-Modulen
+xoutputfilter_info_tx_exmodules = bei folgenden Backend-Modulen nicht aktiv
 xoutputfilter_info_tx_once = nur einmal einfügen
-xoutputfilter_info_tx_excludeids = Bei folgenden Seiten-Id's nicht aktiv:
-
+xoutputfilter_info_tx_excludeids = bei folgenden Artikel-IDs nicht aktiv
 
 # Benennung für die Addonrechte, sichtbar innerhalb der REDAXO-Administration unter Benutzer > Rollen > Allgemein
 
 perm_general_xoutputfilter[] = xoutputfilter[] - Rechte für XOutputFilter-Addon
-perm_general_xoutputfilter[abbrev] = xoutputfilter[abbrev] - XOutputFilter plugin abbrev
-perm_general_xoutputfilter[altmenuentry] = xoutputfilter[altmenuentry] - XOutputFilter Alternativer Menüeintrag
-perm_general_xoutputfilter[backend] = xoutputfilter[backend] - XOutputFilter plugin backend
+perm_general_xoutputfilter[abbrev] = xoutputfilter[abbrev] - XOutputFilter Abkürzungs-Plugin
+perm_general_xoutputfilter[altmenuentry] = xoutputfilter[altmenuentry] - XOutputFilter alternativer Menüeintrag
+perm_general_xoutputfilter[backend] = xoutputfilter[backend] - XOutputFilter Backend-Plugin
 perm_general_xoutputfilter[config] = xoutputfilter[config] - XOutputFilter Einstellungen
-perm_general_xoutputfilter[frontend] = xoutputfilter[frontend] - XOutputFilter plugin frontend
-perm_general_xoutputfilter[import_export] = xoutputfilter[import_export] - XOutputFilter plugin import_export
-perm_general_xoutputfilter[languages] = xoutputfilter[languages] - XOutputFilter plugin languages
+perm_general_xoutputfilter[frontend] = xoutputfilter[frontend] - XOutputFilter Frontend-Plugin
+perm_general_xoutputfilter[import_export] = xoutputfilter[import_export] - XOutputFilter Import/Export-Plugin
+perm_general_xoutputfilter[languages] = xoutputfilter[languages] - XOutputFilter Plugin Sprachersetzungen
