@@ -3,45 +3,45 @@
 xoutputfilter_backend = Backend
 
 xoutputfilter_backend_label_filter = Filter:
-xoutputfilter_backend_label_filter1 = Name/Beschreibung
+xoutputfilter_backend_label_filter1 = Name/Description
 xoutputfilter_backend_label_filter2 = Marker
-xoutputfilter_backend_button_filter = Filtern
+xoutputfilter_backend_button_filter = Filter
 
-xoutputfilter_backend_nodata = Keine Backend-Ersetzungen für diese Auswahl vorhanden!
-xoutputfilter_backend_table_header = Liste der angelegten Backend-Ersetzungen
+xoutputfilter_backend_nodata = No replacement available for this selection!
+xoutputfilter_backend_table_header = List of created replacements
 xoutputfilter_backend_name_header = Name
-xoutputfilter_backend_description_header = Beschreibung
+xoutputfilter_backend_description_header = Description
 xoutputfilter_backend_marker_header = Marker
 
-xoutputfilter_backend_really_delete = Datensatz wirklich löschen?
-xoutputfilter_backend_deleted = Backend-Ersetzung wurde gelöscht!
-xoutputfilter_backend_status_activated = Backend-Ersetzung wurde aktiviert!
-xoutputfilter_backend_status_deactivated = Backend-Ersetzung wurde deaktiviert!
+xoutputfilter_backend_really_delete = Delete record?
+xoutputfilter_backend_deleted = Replacement has been deleted!
+xoutputfilter_backend_status_activated = Replacement has been activated!
+xoutputfilter_backend_status_deactivated = Replacement has been deactivated!
 
-xoutputfilter_backend_add = Backend-Ersetzung hinzufügen
-xoutputfilter_backend_title_add = Backend-Ersetzung hinzufügen
-xoutputfilter_backend_title_edit = Backend-Ersetzung bearbeiten
+xoutputfilter_backend_add = Add replacement
+xoutputfilter_backend_title_add = Add replacement
+xoutputfilter_backend_title_edit = Edit replacement
 
 xoutputfilter_backend_label_name = Name
-xoutputfilter_backend_label_description = Beschreibung
-xoutputfilter_backend_label_active = Aktiviert
-xoutputfilter_backend_label_marker = <ul><li>Marker <br><p class="help-block rex-note">(mehrere durch | getrennt)</p></li><li>oder regulärer Ausdruck für Suchmuster</li></ul>
-xoutputfilter_backend_label_html = <ul><li>Ersetzung</li><li>Code der eingefügt werden soll</li><li>oder regulärer Ausdruck für Ersatz</li><li>oder PHP-Code</li></ul> 
+xoutputfilter_backend_label_description = Description
+xoutputfilter_backend_label_active = Activated
+xoutputfilter_backend_label_marker = <ul><li>Marker <br><p class="help-block rex-note">(several delimited by | )</p></li><li>or a regular expression search pattern</li></ul>
+xoutputfilter_backend_label_html = <ul><li>Replacement</li><li>Code to insert</li><li>or a regular expression for the replacement</li><li>or PHP code</li></ul>
 
-xoutputfilter_backend_insertbefore = Ersetzungstyp
-xoutputfilter_backend_insertbefore0 = nach dem Marker einfügen
-xoutputfilter_backend_insertbefore1 = vor dem Marker einfügen
-xoutputfilter_backend_insertbefore2 = Marker mit Wert ersetzen
-xoutputfilter_backend_insertbefore3 = PREG_REPLACE, Regulärer Ausdruck
-xoutputfilter_backend_insertbefore4 = PHP-Code ausführen
+xoutputfilter_backend_insertbefore = Replacement type
+xoutputfilter_backend_insertbefore0 = insert after marker
+xoutputfilter_backend_insertbefore1 = insert before marker
+xoutputfilter_backend_insertbefore2 = replace marker
+xoutputfilter_backend_insertbefore3 = PREG_REPLACE, regular expression
+xoutputfilter_backend_insertbefore4 = execute PHP code
 
-xoutputfilter_backend_categories = aktiv bei folgenden Backend-Modulen<br>z.B. structure<br><p class="help-block rex-note">(kommaseparierte Liste)</p>
-xoutputfilter_backend_excludeids = Bei folgenden Backend-Modulen nicht aktiv<br><p class="help-block rex-note">(kommaseparierte Liste)</p>
-xoutputfilter_backend_allcats = oder aktiv bei allen Backend-Modulen
-xoutputfilter_backend_once = nur einmal einfügen<br><p class="help-block rex-note">beim ersten Vorkommen eines Markers (dadurch wird preg_replace verwendet)</p>
+xoutputfilter_backend_categories = active in the following backend module blocks<br>ex: structure<br><p class="help-block rex-note">(comma separated list)</p>
+xoutputfilter_backend_excludeids = not active in the following backend module blocks<br>ex: structure<br><p class="help-block rex-note">(comma separated list)</p>
+xoutputfilter_backend_allcats = or active in all backend module blocks
+xoutputfilter_backend_once = only insert once<br><p class="help-block rex-note">when the first instance of marker is found (preg_replace will be used in this case)</p>
 
-xoutputfilter_backend_error_exists = Backend-Ersetzung mit diesem Namen existiert bereits!
-xoutputfilter_backend_error_no_name = Bitte geben Sie einen Namen ein!
-xoutputfilter_backend_error_no_description = Bitte geben Sie eine Beschreibung ein!
-xoutputfilter_backend_error_no_marker = Bitte geben Sie einen Marker ein!
-xoutputfilter_backend_error_update = Beim speichern ist ein Fehler aufgetreten!
+xoutputfilter_backend_error_exists = Backend replacement with that name already exists!
+xoutputfilter_backend_error_no_name = Please enter a name!
+xoutputfilter_backend_error_no_description = Please enter a description!
+xoutputfilter_backend_error_no_marker = Please enter a marker!
+xoutputfilter_backend_error_update = An error occurred when saving!

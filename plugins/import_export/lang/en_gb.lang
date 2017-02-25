@@ -1,6 +1,6 @@
 # plugin:xoutputfilter/import_export
 
-xoutputfilter_import_export = Import/Export
+xoutputfilter_import_export = Import/export
 
 xoutputfilter_import = Import
 xoutputfilter_export = Export
@@ -8,60 +8,60 @@ xoutputfilter_export = Export
 xoutputfilter_title_export = Export
 xoutputfilter_title_import = Import
 
-xoutputfilter_export_title_type = Export-Typ auswählen
-xoutputfilter_export_typsql = Export SQL-Format (alle XOutputFilter-Ersetzungen)
-xoutputfilter_export_typcsv = Export CSV-Format
+xoutputfilter_export_title_type = Specify export type
+xoutputfilter_export_typsql = Export SQL format (all XOutputFilter replacements)
+xoutputfilter_export_typcsv = Export CSV format
 
-xoutputfilter_csv_languages = Sprachersetzungen
-xoutputfilter_csv_abbrev = Abkürzungen
-xoutputfilter_csv_frontend = Frontend-Ersetzungen
-xoutputfilter_csv_backend = Backend-Ersetzungen
-xoutputfilter_export_title_file = Speicherort auswählen
-xoutputfilter_export_server = Auf dem Server speichern
-xoutputfilter_export_file = Als Datei herunterladen
-xoutputfilter_export_filename = Dateiname
+xoutputfilter_csv_languages = Language replacements
+xoutputfilter_csv_abbrev = Abbreviations
+xoutputfilter_csv_frontend = Frontend replacements
+xoutputfilter_csv_backend = Backend replacements
+xoutputfilter_export_title_file = Specify save location
+xoutputfilter_export_server = Save on the server
+xoutputfilter_export_file = Download file
+xoutputfilter_export_filename = Filename
 
-xoutputfilter_backup_file_generated_in = Daten wurden gesichert in Datei:
-xoutputfilter_backup_file_error = Datei konnte nicht erstellt werden!
+xoutputfilter_backup_file_generated_in = Data has been saved to file:
+xoutputfilter_backup_file_error = File could not be created!
 
-xoutputfilter_btnexport = exportieren
+xoutputfilter_btnexport = export
 
-xoutputfilter_title_note = Hinweis
-xoutputfilter_intro_import = Bitte bedenken Sie das beim importieren einer SQL-Datei <b>alle Inhalte der bisherigen Tabelle gelöscht werden</b>! Bitte speichern/exportieren Sie diese vorher wenn Sie sich unsicher sind.<br>Beim Import von CSV-Dateien werden die importierten Daten zu den bestehenden Daten hinzugefügt!
+xoutputfilter_title_note = Notice
+xoutputfilter_intro_import = Please note that when importing an SQL file <b>all existing tables will be deleted</b>! Please save/export the current database before doing this to be safe. <br />When importing a CSV file the imported data will be appended!
 
-xoutputfilter_backup_file = Import-Datei auswählen
-xoutputfilter_btnimport = importieren
-xoutputfilter_confirm_upload = Beim Import von SQL-Dateien werden alle bisherigen XOutputFilter-Daten gelöscht! Import fortfahren?
-xoutputfilter_no_import_file = Keine Import-Datei ausgewählt!
-xoutputfilter_error_upload_file =  Fehler beim Upload der Datei {0}
+xoutputfilter_backup_file = Specify file to import
+xoutputfilter_btnimport = import
+xoutputfilter_confirm_upload = When importing an SQL file all existing XoutputFilter data will be deleted! Continue with import?
+xoutputfilter_no_import_file = No import file specified
+xoutputfilter_error_upload_file =  Error uploading file {0}
 
-xoutputfilter_csv_title = <strong>CSV-Exporte</strong> (werden beim Import hinzugefügt)
-xoutputfilter_sql_title = <strong>SQL-Exporte</strong> (beim Import werden alle bisherigen XOutputFilter-Daten gelöscht!)
-xoutputfilter_filename = Dateiname
-xoutputfilter_filesize = Dateigröße
-xoutputfilter_createdate = Erstellt am
-xoutputfilter_functions = Funktionen
+xoutputfilter_csv_title = <strong>CSV exports</strong> (will be added when importing)
+xoutputfilter_sql_title = <strong>SQL exports</strong> (when importing an SQL file all existing XoutputFilter data will be deleted)
+xoutputfilter_filename = Filename
+xoutputfilter_filesize = Filesize
+xoutputfilter_createdate = Created
+xoutputfilter_functions = Functions
 
-xoutputfilter_file_import = importieren
-xoutputfilter_file_download = herunterladen
-xoutputfilter_file_delete = löschen
-xoutputfilter_import_file = Datei importieren
-xoutputfilter_download_file = Datei herunterladen
-xoutputfilter_delete_file = Datei löschen
+xoutputfilter_file_import = import
+xoutputfilter_file_download = download
+xoutputfilter_file_delete = delete
+xoutputfilter_import_file = Import file
+xoutputfilter_download_file = Download file
+xoutputfilter_delete_file = Delete file
 
-xoutputfilter_proceed_file_import_csv = CSV-Datei importieren?
-xoutputfilter_error_import_csv = CSV-Datei konnte nicht importiert werden!<br>{0}
-xoutputfilter_ok_import_csv = CSV-Datei wurde erfolgreich importiert! {0} Datensätze wurden eingefügt.
+xoutputfilter_proceed_file_import_csv = Import CSV file?
+xoutputfilter_error_import_csv = CSV file could not be imported!<br>{0}
+xoutputfilter_ok_import_csv = CSV file was successfully imported! {0} Records have been added.
 
-xoutputfilter_proceed_file_import_sql = SQL-Datei importieren? Alle bisherigen XOutputFilter-Daten werden gelöscht!
-xoutputfilter_error_import_sql = SQL-Datei konnte nicht importiert werden!<br>{0}
-xoutputfilter_ok_import_sql = SQL-Datei wurde erfolgreich importiert!
-xoutputfilter_error_no_import_file = Keine Importdatei ausgewählt oder ungültige Dateiendung
-xoutputfilter_no_valid_import_file = Das ist keine korrekte Importdatei!
-xoutputfilter_no_valid_charset = Kein passender Zeichensatz.
-xoutputfilter_database_imported = Datenbankimport erfolgreich importiert.
-xoutputfilter_entry_count = ({0} Eintraege)
+xoutputfilter_proceed_file_import_sql = Import SQL file? All existing XOutputFilter data will be deleted!
+xoutputfilter_error_import_sql = SQL file could not be imported!<br>{0}
+xoutputfilter_ok_import_sql = SQL file was successfully imported!
+xoutputfilter_error_no_import_file = No import file specified or invalid file extension
+xoutputfilter_no_valid_import_file = This is not a valid import file!
+xoutputfilter_no_valid_charset = No matching charset.
+xoutputfilter_database_imported = Database import successful.
+xoutputfilter_entry_count = ({0} entries)
 
-xoutputfilter_proceed_file_delete = Datei wirklich löschen?
-xoutputfilter_file_deleted = Datei wurde gelöscht
-xoutputfilter_error_file_delete = Fehler beim löschen der Datei
+xoutputfilter_proceed_file_delete = Delete file?
+xoutputfilter_file_deleted = File has been deleted
+xoutputfilter_error_file_delete = Error deleting file
