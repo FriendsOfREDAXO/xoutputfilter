@@ -3,46 +3,46 @@
 xoutputfilter_frontend = Frontend
 
 xoutputfilter_frontend_label_filter = Filter:
-xoutputfilter_frontend_label_filter1 = Name/Beschreibung
+xoutputfilter_frontend_label_filter1 = Name/description
 xoutputfilter_frontend_label_filter2 = Marker
-xoutputfilter_frontend_button_filter = Filtern
+xoutputfilter_frontend_button_filter = Filter
 
-xoutputfilter_frontend_nodata = Keine Frontend-Ersetzungen für diese Auswahl vorhanden!
-xoutputfilter_frontend_table_header = Liste der angelegten Frontend-Ersetzungen
+xoutputfilter_frontend_nodata = No frontend replacement available for this selection!
+xoutputfilter_frontend_table_header = List of created frontend replacements
 xoutputfilter_frontend_name_header = Name
-xoutputfilter_frontend_description_header = Beschreibung
+xoutputfilter_frontend_description_header = Description
 xoutputfilter_frontend_marker_header = Marker
 
-xoutputfilter_frontend_really_delete = Datensatz wirklich löschen?
-xoutputfilter_frontend_deleted = Frontend-Ersetzung wurde gelöscht!
-xoutputfilter_frontend_status_activated = Frontend-Ersetzung wurde aktiviert!
-xoutputfilter_frontend_status_deactivated = Frontend-Ersetzung wurde deaktiviert!
+xoutputfilter_frontend_really_delete = Delete record?
+xoutputfilter_frontend_deleted = Frontend replacement deleted!
+xoutputfilter_frontend_status_activated = Frontend replacement activated!
+xoutputfilter_frontend_status_deactivated = Frontend replacement deactivated!
 
-xoutputfilter_frontend_add = Frontend-Ersetzung hinzufügen
-xoutputfilter_frontend_title_add = Frontend-Ersetzung hinzufügen
-xoutputfilter_frontend_title_edit = Frontend-Ersetzung bearbeiten
+xoutputfilter_frontend_add = Add frontend replacement
+xoutputfilter_frontend_title_add = Add frontend replacement
+xoutputfilter_frontend_title_edit = Edit frontend replacement
 
 xoutputfilter_frontend_label_name = Name
-xoutputfilter_frontend_label_description = Beschreibung
-xoutputfilter_frontend_label_active = Aktiviert
-xoutputfilter_frontend_label_marker = <ul><li>Marker <br><p class="help-block rex-note">(mehrere durch | getrennt)</p></li><li>oder regulärer Ausdruck für Suchmuster</li></ul>
-xoutputfilter_frontend_label_html = <ul><li>Ersetzung</li><li>Code der eingefügt werden soll</li><li>oder regulärer Ausdruck für Ersatz</li><li>oder PHP-Code</li></ul>
+xoutputfilter_frontend_label_description = Description
+xoutputfilter_frontend_label_active = Activated
+xoutputfilter_frontend_label_marker = <ul><li>Marker <br><p class="help-block rex-note">(several delimited by | )</p></li><li>or a regular expression search pattern</li></ul>
+xoutputfilter_frontend_label_html = <ul><li>Replacement</li><li>Code to insert</li><li>or a regular expression for the replacement</li><li>or PHP code</li></ul>
 
-xoutputfilter_frontend_insertbefore = Ersetzungstyp
-xoutputfilter_frontend_insertbefore0 = nach dem Marker einfügen
-xoutputfilter_frontend_insertbefore1 = vor dem Marker einfügen
-xoutputfilter_frontend_insertbefore2 = Marker mit Wert ersetzen
-xoutputfilter_frontend_insertbefore3 = PREG_REPLACE, Regulärer Ausdruck
-xoutputfilter_frontend_insertbefore4 = PHP-Code ausführen
+xoutputfilter_frontend_insertbefore = Replacement type
+xoutputfilter_frontend_insertbefore0 = insert after marker
+xoutputfilter_frontend_insertbefore1 = insert before marker
+xoutputfilter_frontend_insertbefore2 = replace marker
+xoutputfilter_frontend_insertbefore3 = PREG_REPLACE, regular expression
+xoutputfilter_frontend_insertbefore4 = execute PHP code
 
-xoutputfilter_frontend_categories = aktiv bei folgenden Kategorien<br><p class="help-block rex-note">Mehrfachauswahl mit <kbd>STRG</kbd> bzw. <kbd>CMD</kbd></p>
-xoutputfilter_frontend_excludeids = Bei folgenden Seiten-Id's nicht aktiv
-xoutputfilter_frontend_subcategories = inklusive Subkategorien
-xoutputfilter_frontend_allcats = oder aktiv bei allen Kategorien
-xoutputfilter_frontend_once = nur einmal einfügen<br><p class="help-block rex-note">beim ersten Vorkommen eines Markers (dadurch wird preg_replace verwendet)</p>
+xoutputfilter_frontend_categories = active in the following categories<br><p class="help-block rex-note">select multiple with <kbd>CTRL</kbd> or <kbd>CMD</kbd></p>
+xoutputfilter_frontend_excludeids = not active on the following article Ids
+xoutputfilter_frontend_subcategories = including subcategories
+xoutputfilter_frontend_allcats = or active in all categories
+xoutputfilter_frontend_once = only insert once<br><p class="help-block rex-note">when the first instance of marker is found (preg_replace will be used in this case)</p>
 
-xoutputfilter_frontend_error_exists = Frontend-Ersetzung mit diesem Namen existiert bereits!
-xoutputfilter_frontend_error_no_name = Bitte geben Sie einen Namen ein!
-xoutputfilter_frontend_error_no_description = Bitte geben Sie eine Beschreibung ein!
-xoutputfilter_frontend_error_no_marker = Bitte geben Sie einen Marker ein!
-xoutputfilter_frontend_error_update = Beim speichern ist ein Fehler aufgetreten!
+xoutputfilter_frontend_error_exists = Frontend replacement with that name already exists!
+xoutputfilter_frontend_error_no_name = Please enter a name!
+xoutputfilter_frontend_error_no_description = Please enter a description!
+xoutputfilter_frontend_error_no_marker = Please enter a marker!
+xoutputfilter_frontend_error_update = An error occurred when saving!
