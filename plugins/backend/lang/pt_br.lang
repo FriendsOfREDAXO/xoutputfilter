@@ -1,0 +1,47 @@
+# plugin:xoutputfilter/backend
+
+xoutputfilter_backend = Backend
+
+xoutputfilter_backend_label_filter = Filtro:
+xoutputfilter_backend_label_filter1 = Nome/Descrição
+xoutputfilter_backend_label_filter2 = Marker
+xoutputfilter_backend_button_filter = Filtro
+
+xoutputfilter_backend_nodata = Nenhuma substituição disponível para esta seleção!
+xoutputfilter_backend_table_header = Lista de substituições criadas
+xoutputfilter_backend_name_header = Nome
+xoutputfilter_backend_description_header = Descrição
+xoutputfilter_backend_marker_header = Marker
+
+xoutputfilter_backend_really_delete = Deletar registro?
+xoutputfilter_backend_deleted = Substituição foi deletada!
+xoutputfilter_backend_status_activated = Substituição foi ativada!
+xoutputfilter_backend_status_deactivated = Substituição foi desativada!
+
+xoutputfilter_backend_add = Adicionar substituição!
+xoutputfilter_backend_title_add = Adicionar substituição!
+xoutputfilter_backend_title_edit = Editar substituição!
+
+xoutputfilter_backend_label_name = Nome
+xoutputfilter_backend_label_description = Descrição
+xoutputfilter_backend_label_active = Ativada
+xoutputfilter_backend_label_marker = <ul><li>Marcador <br><p class="help-block rex-note">(quando muitos, devem ser delimitados por "|" )</p></li><li>Ou um padrão de pesquisa de expressão regular</li></ul>
+xoutputfilter_backend_label_html = <ul><li>Substituição</li><li>Code to insert</li><li>Ou uma expressão regular para a substituição</li><li>ou código PHP</li></ul>
+
+xoutputfilter_backend_insertbefore = Tipo de substituição
+xoutputfilter_backend_insertbefore0 = Inserir após o marcador
+xoutputfilter_backend_insertbefore1 = Inserir antes do marcador
+xoutputfilter_backend_insertbefore2 = Substituir marcador
+xoutputfilter_backend_insertbefore3 = PREG_REPLACE, expressão regular
+xoutputfilter_backend_insertbefore4 = Executar código PHP
+
+xoutputfilter_backend_categories = Ativos nos seguintes blocos de módulo de back-end<br>ex: estrutura<br><p class="help-block rex-note">(lista separada por vírgula)</p>
+xoutputfilter_backend_excludeids = Não ativo nos blocos de módulo back-end a seguirbr>ex: estrutura<br><p class="help-block rex-note">(lista separada por vírgula)</p>
+xoutputfilter_backend_allcats = ou ativo em todos os módulos de blocos backend
+xoutputfilter_backend_once = inserir somente uma vez<br><p class="help-block rex-note">Quando a primeira instância do marcador for encontrada (preg_replace será usado neste caso)</p>
+
+xoutputfilter_backend_error_exists = Já existe uma substituição Backend com esse nome!
+xoutputfilter_backend_error_no_name = Por favor, insira um nome!
+xoutputfilter_backend_error_no_description = Por favor, insira uma descrição!
+xoutputfilter_backend_error_no_marker = Por favor, insira um marcador!
+xoutputfilter_backend_error_update = Ocorreu um erro ao salvar!
