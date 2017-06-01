@@ -1,0 +1,32 @@
+# plugin:xoutputfilter/languages
+
+xoutputfilter_languages = Substituições de idiomas
+
+xoutputfilter_languages_label_filter = Filtro:
+xoutputfilter_languages_label_filter1 = Coringa
+xoutputfilter_languages_label_filter2 = Substituição
+xoutputfilter_languages_button_filter = Filtro
+
+xoutputfilter_languages_nodata = Nenhuma tradução disponível!
+xoutputfilter_languages_table_header = Lista de traduções de idiomas
+xoutputfilter_languages_id_header = Coringa
+xoutputfilter_languages_html_header = Substituição
+
+xoutputfilter_languages_really_delete = deseja realmente deletar o registro?
+xoutputfilter_languages_deleted = Substituição do idioma foi apagada!
+xoutputfilter_languages_status_activated = Substituição do idioma foi ativada!
+xoutputfilter_languages_status_deactivated = Substituição do idioma foi desativada!
+
+xoutputfilter_languages_add = Adicionar substituição de idioma
+xoutputfilter_languages_title_add = Adicionar substituição de idioma
+xoutputfilter_languages_title_edit = Editar substituição de idioma
+
+xoutputfilter_languages_label_marker = Coringa
+xoutputfilter_languages_label_html = Substituição
+xoutputfilter_languages_label_active = Ativada
+xoutputfilter_languages_label_excludeids = Produtos da blacklist
+
+xoutputfilter_languages_error_no_name = Por favor, insira um coringa!
+xoutputfilter_languages_error_exists = Espaço reservado já existe!
+xoutputfilter_languages_error_no_html = Por favor, insira uma substituição de idioma!
+xoutputfilter_languages_error_update = Ocorreu um erro ao salvar!
