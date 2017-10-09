@@ -1,0 +1,47 @@
+# plugin:xoutputfilter/backend
+
+xoutputfilter_backend = Backend
+
+xoutputfilter_backend_label_filter = Filter:
+xoutputfilter_backend_label_filter1 = Namn/ beskrivning
+xoutputfilter_backend_label_filter2 = Marker
+xoutputfilter_backend_button_filter = Filtrera
+
+xoutputfilter_backend_nodata = Inga ersättningar tillgängliga för detta val!
+xoutputfilter_backend_table_header = Lista av tillgängliga backend-ersättningar
+xoutputfilter_backend_name_header = Namn
+xoutputfilter_backend_description_header = Beskrivning
+xoutputfilter_backend_marker_header = Marker
+
+xoutputfilter_backend_really_delete = Vill du verkligen radera datasatsen?
+xoutputfilter_backend_deleted = Backend-ersättning raderades!
+xoutputfilter_backend_status_activated = Backend-ersättning aktiverades!
+xoutputfilter_backend_status_deactivated = Backend-ersättning deaktiverades!
+
+xoutputfilter_backend_add = Skapa backend-ersättning
+xoutputfilter_backend_title_add = Skapa backend-ersättning
+xoutputfilter_backend_title_edit = Redigera backend-ersättning
+
+xoutputfilter_backend_label_name = Namn
+xoutputfilter_backend_label_description = Beskrivning
+xoutputfilter_backend_label_active = Aktiverad
+xoutputfilter_backend_label_marker = <ul><li> Markör<br><p class = "help-block rex-note">(flera avgränsade av |)</p></li> <li> eller ett vanligt uttryck för sökmönster</li></ul>
+xoutputfilter_backend_label_html = <ul><li>Byte</li><li>Kod som ska infogas </li><li>eller ett vanligt uttryck för utbytet</li><li>eller PHP-kod</li></ul>
+
+xoutputfilter_backend_insertbefore = Replacement type
+xoutputfilter_backend_insertbefore0 = infoga efter markören
+xoutputfilter_backend_insertbefore1 = infoga före markören
+xoutputfilter_backend_insertbefore2 = Ersätta markören med värde
+xoutputfilter_backend_insertbefore3 = PREG_REPLACE, regular expression
+xoutputfilter_backend_insertbefore4 = Kör PHP-kod
+
+xoutputfilter_backend_categories = aktiv vid följande backend-moduler<br>t.ex. structure<br><p class="help-block rex-note">(kommaseparerat lista)</p>
+xoutputfilter_backend_excludeids = Inte aktiv vid följande backend-moduler<br>t.ex. structure<br><p class="help-block rex-note">(kommaseparerat lista)</p>
+xoutputfilter_backend_allcats = eller aktiv vid alla backend-moduler
+xoutputfilter_backend_once = Lägg bara in en gång <br><p class = "help-block rex-note"> när den första instansen av markören hittas (preg_replace kommer att användas i det här fallet) </p>
+
+xoutputfilter_backend_error_exists = Backend-ersättning med det här namnet finns redan!
+xoutputfilter_backend_error_no_name = Var god ange ett namn!
+xoutputfilter_backend_error_no_description = Var god lämna en beskrivning!
+xoutputfilter_backend_error_no_marker = Var god ange en markör!
+xoutputfilter_backend_error_update = Det uppstod ett när du försökte spara!

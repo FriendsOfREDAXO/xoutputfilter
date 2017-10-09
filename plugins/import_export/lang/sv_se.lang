@@ -1,0 +1,67 @@
+# plugin:xoutputfilter/import_export
+
+xoutputfilter_import_export = Import/Export
+
+xoutputfilter_import = Import
+xoutputfilter_export = Export
+
+xoutputfilter_title_export = Export
+xoutputfilter_title_import = Import
+
+xoutputfilter_export_title_type = Välj typ av export
+xoutputfilter_export_typsql = Export SQL format (all XOutputFilter replacements)
+xoutputfilter_export_typcsv = Export CSV format
+
+xoutputfilter_csv_languages = Språkersättningar
+xoutputfilter_csv_abbrev = Förkortningar
+xoutputfilter_csv_frontend = Frontend-ersättningar
+xoutputfilter_csv_backend = Backend-ersättningar
+xoutputfilter_export_title_file = Välj save location
+xoutputfilter_export_server = Spara på servern
+xoutputfilter_export_file = Ladda ner som fil
+xoutputfilter_export_filename = Filnamn
+
+xoutputfilter_backup_file_generated_in = Data sparades i filen:
+xoutputfilter_backup_file_error = Filen kunde inte skapas!
+
+xoutputfilter_btnexport = exportera
+
+xoutputfilter_title_note = Notis
+xoutputfilter_intro_import = Observera att vid import av en SQL-fil <b> kommer alla befintliga tabeller att raderas </ b>! Spara / exportera nuvarande databas innan du importera för att vara säker. <br /> När du importerar en CSV-fil kommer de importerade data att bifogas till de befintliga data!
+
+xoutputfilter_backup_file = Välj ut import-fil
+xoutputfilter_btnimport = importera
+xoutputfilter_confirm_upload = När du importerar en SQL-fil raderas alla befintliga XoutputFilter-data! Fortsätt med import?
+xoutputfilter_no_import_file = Ingen importfil utvalt!
+xoutputfilter_error_upload_file =  Fel vid uppladdning av filen {0}
+
+xoutputfilter_csv_title = <strong>CSV-exporter</strong> (kommer att tillfogas vid import)
+xoutputfilter_sql_title = <strong> SQL-export</strong> (när du importerar en SQL-fil raderas alla befintliga XoutputFilter-data)
+xoutputfilter_filename = Filnamn
+xoutputfilter_filesize = Filstorlek
+xoutputfilter_createdate = Skapats den
+xoutputfilter_functions = Funktioner
+
+xoutputfilter_file_import = importera
+xoutputfilter_file_download = ladda ner
+xoutputfilter_file_delete = radera
+xoutputfilter_import_file = Importera fil
+xoutputfilter_download_file = Ladda ner fil
+xoutputfilter_delete_file = Radera fil
+
+xoutputfilter_proceed_file_import_csv = Importera CSV-fil?
+xoutputfilter_error_import_csv = CSV-filen kunde inte importeras<br/>{0}
+xoutputfilter_ok_import_csv = CSV-filen importerades<br/>{0} Datasatser tillfogades.
+
+xoutputfilter_proceed_file_import_sql = Importera SQL-fil? Alla befintliga XoutputFilter-data kommer att raderas!
+xoutputfilter_error_import_sql = SQL-filen kunde inte importeras!<br/> {0}
+xoutputfilter_ok_import_sql = SQL-filen importerades
+xoutputfilter_error_no_import_file = Ingen importfil har angetts eller ogiltig filtillägg
+xoutputfilter_no_valid_import_file = Ingen korrekt importfil!
+xoutputfilter_no_valid_charset = Ingen matchande charset.
+xoutputfilter_database_imported = Databas importerades.
+xoutputfilter_entry_count = ({0} poster)
+
+xoutputfilter_proceed_file_delete = Vill du verkligen radera filen?
+xoutputfilter_file_deleted = Filen raderades
+xoutputfilter_error_file_delete = Fel när du försökte radera filen

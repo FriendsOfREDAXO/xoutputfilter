@@ -1,0 +1,78 @@
+# addon:xoutputfilter
+
+xoutputfilter_title = XOutputFilter
+
+xoutputfilter_config = XOutputFilter
+xoutputfilter_info = XOutputFilter
+xoutputfilter_hilfe = Hjälp
+xoutputfilter_changelog = Changelog
+xoutputfilter_lizenz = Licens
+xoutputfilter_documentation = Dokumentation
+
+xoutputfilter_title_config = Konfiguration
+xoutputfilter_title_hilfe = Hjälp
+xoutputfilter_title_changelog = Change log
+xoutputfilter_title_lizenz = Licens
+xoutputfilter_title_developer = Information till utvecklare
+
+xoutputfilter_config_active = XOutputFilter aktiv
+xoutputfilter_config_runtimeinfo = Output runtime information (in HTML output at the end)
+xoutputfilter_config_syslog = Protokollera informationen i Syslog (t.ex. Import, synkronisering)
+xoutputfilter_config_codemirror = Använda Codemirror (Plugins <code>backend, frontend</code>)
+xoutputfilter_config_sessioncache = Använda Session-Cache
+xoutputfilter_config_altmenuentry = Alternativ menyuppgift <br><p class = "help-block rex-note"> Behörighet xoutputfilter [altmenuentry] </p>
+xoutputfilter_config_excludecats = Blacklist-kategorier<br><p class="help-block rex-note">Flertalsurval med <kbd>STRG</kbd> eller <kbd>CMD</kbd></p>
+xoutputfilter_config_excludeids = Blacklist-artikel
+xoutputfilter_config_excludepages = Blacklist backend-sidor<br><p class="help-block rex-note">(kommaseparerat lista)</p><p>t.ex. <code>structure, system/settings</code></p>
+xoutputfilter_config_showalllangs = Visa alla språk i översikten
+xoutputfilter_config_tags = Präfix / Suffix
+xoutputfilter_config_placeholder = Platshållare
+
+xoutputfilter_config_title = Generellt
+xoutputfilter_config_titleexclude = Undantag
+xoutputfilter_config_titlemarker = Språkersättningar
+xoutputfilter_config_titlesync = Synkronisering
+
+xoutputfilter_config_syncabbrev = Synka förkortningar i alla språk
+xoutputfilter_config_syncfrontend = Synka frontend-ersättningar i alla språk
+xoutputfilter_config_scanmarker = Genomsök content, mallar och modular efter platshållare och ta över de i språkersättningen
+
+xoutputfilter_save = Spara konfigurationen
+xoutputfilter_config_saved = Konfigurationen sparades!
+xoutputfilter_no_plugin = Obs: Inga XOutputFilter-Plugins installerade!
+
+xoutputfilter_notactive = XOutputFilter är inte aktiverat!
+
+xoutputfilter_button_save = Spara
+xoutputfilter_button_apply = Spara och fortsätt
+xoutputfilter_button_delete = Radera
+xoutputfilter_button_abort = Avbryt
+
+xoutputfilter_activated = Aktiverat
+xoutputfilter_deactivated = Deaktiverat
+
+xoutputfilter_msg_update = Data har tagits över!
+xoutputfilter_msg_saved = Data har sparats!
+xoutputfilter_msg_cancel = Data förkastades!
+
+xoutputfilter_info_header = Info
+xoutputfilter_func_header = Status/funktion
+xoutputfilter_info_tx_categories = aktiv i följande kategorier
+xoutputfilter_info_tx_subcats = inklusive underkategorier
+xoutputfilter_info_tx_allcats = aktiv i alla kategorier
+xoutputfilter_info_tx_modules = aktiv på följande backend-moduler
+xoutputfilter_info_tx_allmodules = aktiv på alla backend-moduler
+xoutputfilter_info_tx_exmodules = vid följande backend-moduler inte aktiv
+xoutputfilter_info_tx_once = infoga bara en gång
+xoutputfilter_info_tx_excludeids = inte aktiv vid följande artikel-IDs
+
+# Benennung für die Addonrechte, sichtbar innerhalb der REDAXO-Administration unter Benutzer > Rollen > Allgemein
+
+perm_general_xoutputfilter[] = xoutputfilter[] - Behörigheter för XOutputFilter-Addon
+perm_general_xoutputfilter[abbrev] = xoutputfilter[abbrev] - XOutputFilter Abkürzungs-Plugin
+perm_general_xoutputfilter[altmenuentry] = xoutputfilter[altmenuentry] - XOutputFilter alternativ menypost
+perm_general_xoutputfilter[backend] = xoutputfilter[backend] - XOutputFilter Backend-Plugin
+perm_general_xoutputfilter[config] = xoutputfilter[config] - XOutputFilter inställningar
+perm_general_xoutputfilter[frontend] = xoutputfilter[frontend] - XOutputFilter Frontend-Plugin
+perm_general_xoutputfilter[import_export] = xoutputfilter[import_export] - XOutputFilter plugin import_export
+perm_general_xoutputfilter[languages] = xoutputfilter[languages] - XOutputFilter Plugin språkersättningar
