@@ -1,0 +1,48 @@
+# plugin:xoutputfilter/frontend
+
+xoutputfilter_frontend = Frontend
+
+xoutputfilter_frontend_label_filter = Filter:
+xoutputfilter_frontend_label_filter1 = Namn/beskrivning
+xoutputfilter_frontend_label_filter2 = Markör
+xoutputfilter_frontend_button_filter = Filtrera
+
+xoutputfilter_frontend_nodata = Ingen frontend-ersättning tillgänglig för detta val!
+xoutputfilter_frontend_table_header = Lista av alla frontend-ersättningar
+xoutputfilter_frontend_name_header = Namn
+xoutputfilter_frontend_description_header = Beskrivning
+xoutputfilter_frontend_marker_header = Markör
+
+xoutputfilter_frontend_really_delete = Vill du verkligen radera datasatsen?
+xoutputfilter_frontend_deleted = Frontend-ersättning raderades!
+xoutputfilter_frontend_status_activated = Frontend-ersättning aktiverades!
+xoutputfilter_frontend_status_deactivated = Frontend-ersättning deaktiverades!
+
+xoutputfilter_frontend_add = Tillfoga frontend-ersättning
+xoutputfilter_frontend_title_add = Tillfoga frontend-ersättning
+xoutputfilter_frontend_title_edit = Redigera frontend-ersättning
+
+xoutputfilter_frontend_label_name = Namn
+xoutputfilter_frontend_label_description = Beskrivning
+xoutputfilter_frontend_label_active = Aktiverad
+xoutputfilter_frontend_label_marker = <ul><li> Markör<br><p class = "help-block rex-note">(flera avgränsade av |)</p></li> <li> eller ett vanligt uttryck för sökmönster</li></ul>
+xoutputfilter_frontend_label_html = <ul><li>Ersättning</li><li>Kod som ska infogas </li><li>eller ett vanligt uttryck för utbytet</li><li>eller PHP-kod</li></ul>
+
+xoutputfilter_frontend_insertbefore = Utbytestyp
+xoutputfilter_frontend_insertbefore0 = infoga efter markören
+xoutputfilter_frontend_insertbefore1 = infoga före markören
+xoutputfilter_frontend_insertbefore2 = Ersätt markör med värde
+xoutputfilter_frontend_insertbefore3 = PREG_REPLACE, regular expression
+xoutputfilter_frontend_insertbefore4 = Kör PHP-kod
+
+xoutputfilter_frontend_categories = aktiv i följande kategorier<br><p class="help-block rex-note">flertalsurval med <kbd>CTRL</kbd> eller <kbd>CMD</kbd></p>
+xoutputfilter_frontend_excludeids = Inte aktiv vid följande sid-IDs
+xoutputfilter_frontend_subcategories = inklusive subkategorierna
+xoutputfilter_frontend_allcats = eller aktiv vid alla kategorier
+xoutputfilter_frontend_once = infoga endast en gång<br><p class = "hjälp-blocket rex-note">när den första förekomsten av markör hittas (preg_replace kommer att användas i detta fall)</p>
+
+xoutputfilter_frontend_error_exists = En frontend-ersättning med detta namnet finns redan!
+xoutputfilter_frontend_error_no_name = Var god ange ett namn!
+xoutputfilter_frontend_error_no_description = Var god lämna en beskrivning!
+xoutputfilter_frontend_error_no_marker = Var god ange en markör!
+xoutputfilter_frontend_error_update = Det uppstod ett fel när du försökte spara!

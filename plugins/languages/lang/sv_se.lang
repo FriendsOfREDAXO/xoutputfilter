@@ -1,0 +1,32 @@
+# plugin:xoutputfilter/languages
+
+xoutputfilter_languages = Språkersättningar
+
+xoutputfilter_languages_label_filter = Filter:
+xoutputfilter_languages_label_filter1 = Platshållare
+xoutputfilter_languages_label_filter2 = Ersättning
+xoutputfilter_languages_button_filter = Filtrera
+
+xoutputfilter_languages_nodata = Det finns inga språkersättningar för detta valet!
+xoutputfilter_languages_table_header = Lista av alla språkersättningar
+xoutputfilter_languages_id_header = Platshållare
+xoutputfilter_languages_html_header = Ersättning
+
+xoutputfilter_languages_really_delete = Vill du verkligen radera datasatsen?
+xoutputfilter_languages_deleted = Språkersättning raderades!
+xoutputfilter_languages_status_activated = Språkersättning aktiverades!
+xoutputfilter_languages_status_deactivated = Språkersättning deaktiverades!
+
+xoutputfilter_languages_add = Skapa språkersättning
+xoutputfilter_languages_title_add = Skapa språkersättning
+xoutputfilter_languages_title_edit = Redigera språkersättning
+
+xoutputfilter_languages_label_marker = Platshållare
+xoutputfilter_languages_label_html = Språkersättning
+xoutputfilter_languages_label_active = Aktiverat
+xoutputfilter_languages_label_excludeids = Blacklist artikel
+
+xoutputfilter_languages_error_no_name = Var god ange en platshållare!
+xoutputfilter_languages_error_exists = Platshållaren finns redan!
+xoutputfilter_languages_error_no_html = Var god ange en språkersättning!
+xoutputfilter_languages_error_update = Det uppstod ett fel när du försökte spara!

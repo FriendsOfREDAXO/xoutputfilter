@@ -1,0 +1,32 @@
+# plugin:xoutputfilter/abbrev
+
+xoutputfilter_abbrev = Förkortningar
+
+xoutputfilter_abbrev_label_filter = Filter:
+xoutputfilter_abbrev_label_filter1 = Förkortningar
+xoutputfilter_abbrev_label_filter2 = Notering
+xoutputfilter_abbrev_button_filter = Filtrera
+
+xoutputfilter_abbrev_nodata = Ingen förkortning tillgänglig för detta val!
+xoutputfilter_abbrev_table_header = Lista över förkortningar
+xoutputfilter_abbrev_id_header = Förkortningar
+xoutputfilter_abbrev_html_header = Notering
+
+xoutputfilter_abbrev_really_delete = Vill du verkligen radera datasatsen?
+xoutputfilter_abbrev_deleted = Förkortningen har raderats!
+xoutputfilter_abbrev_status_activated = Förkortningen har aktiverats!
+xoutputfilter_abbrev_status_deactivated = Förkortningen har deaktiverats!
+
+xoutputfilter_abbrev_add = Skapa förkortning
+xoutputfilter_abbrev_title_add = Skapa förkortning
+xoutputfilter_abbrev_title_edit = Redigera förkortning
+
+xoutputfilter_abbrev_label_marker = Förkortning
+xoutputfilter_abbrev_label_html = Notering
+xoutputfilter_abbrev_label_active = Aktiverat
+xoutputfilter_abbrev_label_excludeids = Ej aktiv på följande artikel IDs
+
+xoutputfilter_abbrev_error_no_name = Vänligen ange en förkortning!
+xoutputfilter_abbrev_error_exists = Förkortningen finns redan!
+xoutputfilter_abbrev_error_no_html = Vänligen lämna en meddelandetext!
+xoutputfilter_abbrev_error_update = Ett fel uppstod när du försökte spara!
