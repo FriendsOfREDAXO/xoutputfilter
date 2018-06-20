@@ -1,0 +1,32 @@
+# plugin:xoutputfilter/abbrev
+
+xoutputfilter_abbrev = Abreviaciones
+
+xoutputfilter_abbrev_label_filter = Filtrar:
+xoutputfilter_abbrev_label_filter1 = Abreviación
+xoutputfilter_abbrev_label_filter2 = Descripción
+xoutputfilter_abbrev_button_filter = Filtrar
+
+xoutputfilter_abbrev_nodata = ¡No hay atajos disponibles para esta selección!
+xoutputfilter_abbrev_table_header = Lista de abreviaciones creadas
+xoutputfilter_abbrev_id_header = Abreviación
+xoutputfilter_abbrev_html_header = Descripción
+
+xoutputfilter_abbrev_really_delete = ¿Eliminar el registro?
+xoutputfilter_abbrev_deleted = ¡La abreviación ha sido eliminada!
+xoutputfilter_abbrev_status_activated = ¡La abreviación ha sido activada!
+xoutputfilter_abbrev_status_deactivated = ¡La abreviación ha sido desactivada!
+
+xoutputfilter_abbrev_add = Añadir abreviación
+xoutputfilter_abbrev_title_add = Añadir abreviación
+xoutputfilter_abbrev_title_edit = Editar abreviación
+
+xoutputfilter_abbrev_label_marker = Abreviación
+xoutputfilter_abbrev_label_html = Descripción
+xoutputfilter_abbrev_label_active = Activado
+xoutputfilter_abbrev_label_excludeids = No está activo para los siguientes id de página
+
+xoutputfilter_abbrev_error_no_name = Por favor ingrese una abreviatura
+xoutputfilter_abbrev_error_exists = La abreviación ya existe
+xoutputfilter_abbrev_error_no_html = Por favor ingrese una nota!
+xoutputfilter_abbrev_error_update = ¡Ocurrió un error al guardar!

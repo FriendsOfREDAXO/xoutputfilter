@@ -1,0 +1,32 @@
+# plugin:xoutputfilter/languages
+
+xoutputfilter_languages = Reemplazos de idioma
+
+xoutputfilter_languages_label_filter = Filtro:
+xoutputfilter_languages_label_filter1 = Marcador de posición
+xoutputfilter_languages_label_filter2 = Reemplazo
+xoutputfilter_languages_button_filter = Filtro
+
+xoutputfilter_languages_nodata = ¡No hay traducciones disponibles!
+xoutputfilter_languages_table_header = Lista de traducciones de idiomas
+xoutputfilter_languages_id_header = Marcador de posición
+xoutputfilter_languages_html_header = Reemplazo
+
+xoutputfilter_languages_really_delete = ¿Es saguro de borrar el registro?
+xoutputfilter_languages_deleted = ¡La traducción de idiomas ha sido eliminada!
+xoutputfilter_languages_status_activated = ¡La traducción del idioma ha sido activada!
+xoutputfilter_languages_status_deactivated = ¡La traducción del idioma ha sido desactivado!
+
+xoutputfilter_languages_add = Añadir una traducción
+xoutputfilter_languages_title_add = Añadir una traducción
+xoutputfilter_languages_title_edit = Edita la traducción
+
+xoutputfilter_languages_label_marker = Marcador de posición
+xoutputfilter_languages_label_html = Reemplazo
+xoutputfilter_languages_label_active = Activado
+xoutputfilter_languages_label_excludeids = Artículo de la lista negra
+
+xoutputfilter_languages_error_no_name = Por favor, introduzca un marcador de posición!
+xoutputfilter_languages_error_exists = ¡El marcador ya existe!
+xoutputfilter_languages_error_no_html = Por favor, introduzca un reemplazo de idioma!
+xoutputfilter_languages_error_update = ¡Ocurrió un error al guardar!

@@ -1,0 +1,48 @@
+# plugin:xoutputfilter/frontend
+
+xoutputfilter_frontend = Interfaz
+
+xoutputfilter_frontend_label_filter = Filtrar:
+xoutputfilter_frontend_label_filter1 = Nombre / Descripción
+xoutputfilter_frontend_label_filter2 = Marcador
+xoutputfilter_frontend_button_filter = Filtrar
+
+xoutputfilter_frontend_nodata = ¡Sin reemplazos frontend para esta selección!
+xoutputfilter_frontend_table_header = Lista de reemplazos frontend creados
+xoutputfilter_frontend_name_header = Nombre
+xoutputfilter_frontend_description_header = Descripción
+xoutputfilter_frontend_marker_header = Marcador
+
+xoutputfilter_frontend_really_delete = ¿Eliminar el registro?
+xoutputfilter_frontend_deleted = Reemplazo frontend eliminado!
+xoutputfilter_frontend_status_activated = Reemplazo frontend activado!
+xoutputfilter_frontend_status_deactivated = Reemplazo frontend desactivado!
+
+xoutputfilter_frontend_add = Añadir reemplazo frontend
+xoutputfilter_frontend_title_add = Añadir reemplazo frontend
+xoutputfilter_frontend_title_edit = Editar reemplazo frontend
+
+xoutputfilter_frontend_label_name = Nombre
+xoutputfilter_frontend_label_description = Descripción
+xoutputfilter_frontend_label_active = Activado
+xoutputfilter_frontend_label_marker = <ul><li>Marker <br><p class = "help-block rex-note"> (múltiples separados por |) </p></li><li>o búsqueda de patrón de expresión regular</li></ul>
+xoutputfilter_frontend_label_html = <ul><li>Reemplazo</li><li>Código para insertar</li><li>o expresión regular para reemplazar</li><li>o código PHP</li></ul>
+
+xoutputfilter_frontend_insertbefore = Tipo de reemplazo
+xoutputfilter_frontend_insertbefore0 = insertar después del marcador
+xoutputfilter_frontend_insertbefore1 = insertar en frente del marcador
+xoutputfilter_frontend_insertbefore2 = Reemplazar marcador
+xoutputfilter_frontend_insertbefore3 = PREG_REPLACE, expresión regular
+xoutputfilter_frontend_insertbefore4 = Ejecutar código PHP
+
+xoutputfilter_frontend_categories = activo en las siguientes categorías<br><p class="help-block rex-note">Selección múltiple con <kbd>CTRL</kbd> o <kbd>CMD</kbd></p>
+xoutputfilter_frontend_excludeids = No está activo para los siguientes Id's de página
+xoutputfilter_frontend_subcategories = incluyendo subcategorías
+xoutputfilter_frontend_allcats = o activo en todas las categorías
+xoutputfilter_frontend_once = inserte solo una vez<br><p class="help-block rex-note">la primera aparición de un marcador (esto usará preg_replace)</p>
+
+xoutputfilter_frontend_error_exists = ¡El reemplazo frontend con este nombre ya existe!
+xoutputfilter_frontend_error_no_name = Por favor ingrese un nombre!
+xoutputfilter_frontend_error_no_description = Por favor, ingrese una descripción!
+xoutputfilter_frontend_error_no_marker = Por favor ingrese un marcador!
+xoutputfilter_frontend_error_update = ¡Ocurrió un error al guardar!

@@ -1,0 +1,67 @@
+# plugin:xoutputfilter/import_export
+
+xoutputfilter_import_export = Importar/Exportar
+
+xoutputfilter_import = Importar
+xoutputfilter_export = Exportar
+
+xoutputfilter_title_export = Exportar
+xoutputfilter_title_import = Importar
+
+xoutputfilter_export_title_type = Seleccionar tipo de exportación
+xoutputfilter_export_typsql = Exportar formato SQL (todos los reemplazos de XOutputFilter)
+xoutputfilter_export_typcsv = Exportar formato CSV
+
+xoutputfilter_csv_languages = Reemplazos de idioma
+xoutputfilter_csv_abbrev = Abreviaturas
+xoutputfilter_csv_frontend = Reemplazos de Frontend
+xoutputfilter_csv_backend = Reemplazos de backend
+xoutputfilter_export_title_file = Seleccionar ubicación
+xoutputfilter_export_server = Guardar en el servidor
+xoutputfilter_export_file = Descargar archivo
+xoutputfilter_export_filename = Nombre de archivo
+
+xoutputfilter_backup_file_generated_in = Los datos se guardaron en el archivo:
+xoutputfilter_backup_file_error = ¡El archivo no pudo ser creado!
+
+xoutputfilter_btnexport = Exportar
+
+xoutputfilter_title_note = Aviso
+xoutputfilter_intro_import = Tenga en cuenta al importar un archivo SQL <b>se eliminarán todos los contenidos de la tabla anterior</b>. Guarde/Exporte estos datos de antemano si no está seguro. <br>Cuando importe archivos CSV, los datos importados se agregarán a los datos existentes.
+
+xoutputfilter_backup_file = Seleccione archivo a importar
+xoutputfilter_btnimport = importar
+xoutputfilter_confirm_upload = Al importar archivos SQL, se borrarán todos los datos anteriores de XOutputFilter. Continuar importando?
+xoutputfilter_no_import_file = ¡No se seleccionó ningún archivo de importación!
+xoutputfilter_error_upload_file =  Error al cargar el archivo {0}
+
+xoutputfilter_csv_title = <strong>Exportaciones de CSV</strong> (se agregará al importar)
+xoutputfilter_sql_title = <strong>SQL exports</strong> (todos los datos antiguos de XOutputFilter se eliminarán durante la importación)
+xoutputfilter_filename = Nombre de archivo
+xoutputfilter_filesize = Tamaño del archivo
+xoutputfilter_createdate = Creado
+xoutputfilter_functions = Funciones
+
+xoutputfilter_file_import = importar
+xoutputfilter_file_download = descargar
+xoutputfilter_file_delete = Borrar
+xoutputfilter_import_file = Importar archivo
+xoutputfilter_download_file = Descargar archivo
+xoutputfilter_delete_file = Eliminar archivo
+
+xoutputfilter_proceed_file_import_csv = Importar archivo CSV?
+xoutputfilter_error_import_csv = ¡El archivo CSV no se pudo importar!<br>{0}
+xoutputfilter_ok_import_csv = ¡El archivo CSV se importó con éxito! Se han insertado {0} registros.
+
+xoutputfilter_proceed_file_import_sql = Importar archivo SQL? ¡Todos los datos de XOutputFilter anteriores serán eliminados!
+xoutputfilter_error_import_sql = ¡No se pudo importar el archivo SQL!<br>{0}
+xoutputfilter_ok_import_sql = ¡El archivo SQL se importó con éxito!
+xoutputfilter_error_no_import_file = No se seleccionó el archivo de importación o la extensión de archivo no es válida
+xoutputfilter_no_valid_import_file = ¡Este no es un archivo de importación correcto!
+xoutputfilter_no_valid_charset = Sin juego de caracteres.
+xoutputfilter_database_imported = Se importó la base de datos exitosamente.
+xoutputfilter_entry_count = ({0} Entradas)
+
+xoutputfilter_proceed_file_delete = Eliminar archivo?
+xoutputfilter_file_deleted = El archivo fue eliminado
+xoutputfilter_error_file_delete = Error al eliminar el archivo
