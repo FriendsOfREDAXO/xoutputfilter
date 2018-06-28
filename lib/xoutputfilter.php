@@ -462,10 +462,16 @@ class xoutputfilter
                         foreach ($matches as &$match) {
                             // Parameter-Teil weiter parsen und $params-Array aufbauen...
                             $paramsPart = trim($match[1][0]);
-                            $paramsPattern = '#([a-zA-Z0-9_:\\-]+)="([^"]*)"#';
+                            // g{-3} matched das selbe Zeichen was zuvor gematcht wurde ' oder "
+                            //$paramsPattern = '#([a-zA-Z0-9_:\\-]+)=(["\']|“)(.*)(\\g{-3}|”)#Uu';
+                            //$paramsPattern = '#([a-zA-Z0-9_:\\-]+)=(?|(["\'])(.*)\\g{-2}|(“)(.*)”)#Uu';
+                            $paramsPattern = '#([a-zA-Z0-9_:\\-]+)=(?|"([^"]*)"|\'([^\']*)\'|“([^”]*)”)#Uu';
                             $params = [];
                             if (preg_match_all($paramsPattern, $paramsPart, $paramsMatches, PREG_SET_ORDER)) {
+                                #echo '<pre>',print_r($paramsMatches,true),'</pre>';
+                                #die();
                                 foreach ($paramsMatches as &$pmatch) {
+                                    //$params[$pmatch[1]] = $pmatch[3];
                                     $params[$pmatch[1]] = $pmatch[2];
                                 }
                             }
