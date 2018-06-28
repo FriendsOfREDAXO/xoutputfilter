@@ -442,6 +442,59 @@ class xoutputfilter
                         }
                     }
                 }
+                
+                // PHP mit Parametern: [[date format="d.m.Y" param2="dadfa"]]
+                if ($insertbefore == '5') {
+                    // RegEx für das Erkennen von Markern erzeugen...
+                    // #  [[   date   (.*)   ]]   #  i
+                    // => #\[\[date(.*)\]\]#i
+                    $delimiter = '#';
+                    $pattern = $delimiter.preg_quote($tagopen, $delimiter)
+                            .preg_quote($marker, $delimiter)
+                            .'(.*)'
+                            .preg_quote($tagclose, $delimiter)
+                            .$delimiter.'i';
+                    
+                    // jedes Vorkommen des Markers finden...
+                    if (preg_match_all($pattern, $content, $matches, PREG_SET_ORDER|PREG_OFFSET_CAPTURE)) {
+                        $result = ''; // neuer content wird in $result aufgebaut
+                        $start = 0;   // Hilfs-Index
+                        foreach ($matches as &$match) {
+                            // Parameter-Teil weiter parsen und $params-Array aufbauen...
+                            $paramsPart = trim($match[1][0]);
+                            $paramsPattern = '#([a-zA-Z0-9_:\\-]+)="([^"]*)"#';
+                            $params = [];
+                            if (preg_match_all($paramsPattern, $paramsPart, $paramsMatches, PREG_SET_ORDER)) {
+                                foreach ($paramsMatches as &$pmatch) {
+                                    $params[$pmatch[1]] = $pmatch[2];
+                                }
+                            }
+                            
+                            // Ersetzung erzeugen, in dem wir den Code mit den $params ausführen...
+                            $phprc = xoutputfilter_util::evalphp($replace, $params);
+                            if (!$phprc['error']) {
+                                $replacement = $phprc['evaloutput'];
+                            } else {
+                                $replacement = 'Fehler beim Ausführen.';
+                            }
+                            
+                            // content zusammen bauen...
+                            // ...erst der Teil vor dem Marker...
+                            $result .= substr($content, $start, $match[0][1]-$start);
+                            // ...dann die Ersetzung...
+                            $result .= $replacement;
+                            // ...zum Schluss setzen wir den Hilfs-Index auf nach dem Marker, fürs nächste Mal.
+                            $start = $match[0][1] + strlen($match[0][0]);
+                        }
+                        // Den Rest nach dem letzten Marker anhängen...
+                        $result .= substr($content, $start);
+                        
+                        // ... und fertig!
+                        $content = $result;
+                    }
+                } // -- $insertbefore == '5'
+                
+                
             }
         }
 

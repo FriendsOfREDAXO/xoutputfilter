@@ -658,7 +658,7 @@ class xoutputfilter_util
      *
      * @return array
      */
-    public static function evalphp($code)
+    public static function evalphp($code, $params = null)
     {
         $evalresult = array();
         $evalresult['error'] = false;

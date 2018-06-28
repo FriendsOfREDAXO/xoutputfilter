@@ -34,6 +34,7 @@ xoutputfilter_frontend_insertbefore1 = insert before marker
 xoutputfilter_frontend_insertbefore2 = replace marker
 xoutputfilter_frontend_insertbefore3 = PREG_REPLACE, regular expression
 xoutputfilter_frontend_insertbefore4 = execute PHP code
+xoutputfilter_frontend_insertbefore5 = PHP with parameters
 
 xoutputfilter_frontend_categories = active in the following categories<br><p class="help-block rex-note">select multiple with <kbd>CTRL</kbd> or <kbd>CMD</kbd></p>
 xoutputfilter_frontend_excludeids = not active on the following article Ids
