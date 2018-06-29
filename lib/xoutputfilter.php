@@ -465,7 +465,7 @@ class xoutputfilter
                             // g{-3} matched das selbe Zeichen was zuvor gematcht wurde ' oder "
                             //$paramsPattern = '#([a-zA-Z0-9_:\\-]+)=(["\']|“)(.*)(\\g{-3}|”)#Uu';
                             //$paramsPattern = '#([a-zA-Z0-9_:\\-]+)=(?|(["\'])(.*)\\g{-2}|(“)(.*)”)#Uu';
-                            $paramsPattern = '#([a-zA-Z0-9_:\\-]+)=(?|"([^"]*)"|\'([^\']*)\'|“([^”]*)”)#Uu';
+                            $paramsPattern = '#([a-zA-Z0-9_:\\-]+)=(?|"([^"]*)"|\'([^\']*)\'|“([^”]*)”)#U';
                             $params = [];
                             if (preg_match_all($paramsPattern, $paramsPart, $paramsMatches, PREG_SET_ORDER)) {
                                 echo '<pre>',print_r($paramsMatches,true),'</pre>';
