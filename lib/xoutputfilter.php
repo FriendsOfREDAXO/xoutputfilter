@@ -465,8 +465,9 @@ class xoutputfilter
                             // g{-3} matched das selbe Zeichen was zuvor gematcht wurde ' oder "
                             //$paramsPattern = '#([a-zA-Z0-9_:\\-]+)=(["\']|“)(.*)(\\g{-3}|”)#Uu';
                             //$paramsPattern = '#([a-zA-Z0-9_:\\-]+)=(?|(["\'])(.*)\\g{-2}|(“)(.*)”)#Uu';
-                            $paramsPattern = '#([a-zA-Z0-9_:\\-]+)=(?|"([^"]*)"|\'([^\']*)\'|“([^”]*)”)#U';
+                            $paramsPattern = '#([a-zA-Z0-9_:\\-]+)=(?|"([^"]*)"|\'([^\']*)\'|“([^”]*)”)#Uu';
                             $params = [];
+                            echo '<pre>',print_r($paramsPart,true),'</pre>';
                             if (preg_match_all($paramsPattern, $paramsPart, $paramsMatches, PREG_SET_ORDER)) {
                                 echo '<pre>',print_r($paramsMatches,true),'</pre>';
                                 die();
@@ -475,13 +476,14 @@ class xoutputfilter
                                     $params[$pmatch[1]] = $pmatch[2];
                                 }
                             }
+                            die('nach dem');
                             
                             // Ersetzung erzeugen, in dem wir den Code mit den $params ausführen...
                             $phprc = xoutputfilter_util::evalphp($replace, $params);
                             if (!$phprc['error']) {
                                 $replacement = $phprc['evaloutput'];
                             } else {
-                                $replacement = 'Fehler beim Ausführen.';
+                                $replacement = $match[0][0]; // kann man sicher feiner machen - marker bleibt.
                             }
                             
                             // content zusammen bauen...
