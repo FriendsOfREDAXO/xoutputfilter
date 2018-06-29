@@ -468,8 +468,8 @@ class xoutputfilter
                             $paramsPattern = '#([a-zA-Z0-9_:\\-]+)=(?|"([^"]*)"|\'([^\']*)\'|“([^”]*)”)#Uu';
                             $params = [];
                             if (preg_match_all($paramsPattern, $paramsPart, $paramsMatches, PREG_SET_ORDER)) {
-                                #echo '<pre>',print_r($paramsMatches,true),'</pre>';
-                                #die();
+                                echo '<pre>',print_r($paramsMatches,true),'</pre>';
+                                die();
                                 foreach ($paramsMatches as &$pmatch) {
                                     //$params[$pmatch[1]] = $pmatch[3];
                                     $params[$pmatch[1]] = $pmatch[2];
