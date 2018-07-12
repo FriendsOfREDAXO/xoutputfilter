@@ -453,7 +453,7 @@ class xoutputfilter
                             .preg_quote($marker, $delimiter)
                             .'(.*)'
                             .preg_quote($tagclose, $delimiter)
-                            .$delimiter.'i';
+                            .$delimiter.'Uui';
                     
                     // jedes Vorkommen des Markers finden...
                     if (preg_match_all($pattern, $content, $matches, PREG_SET_ORDER|PREG_OFFSET_CAPTURE)) {
