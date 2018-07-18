@@ -13,8 +13,7 @@ page:
     perm: xoutputfilter[]
 
 requires:
-
-    redaxo: '>=5.0.0'
+    redaxo: '>=5.1.0'
 
 system_plugins:
     - documentation
