@@ -24,4 +24,4 @@ unset($_SESSION['xoutputfilter']['@backend']['items']);
 unset($_SESSION['xoutputfilter']['@frontend']['items']);
 
 // Include Page
-include rex_be_controller::getCurrentPageObject()->getSubPath();
+rex_be_controller::includeCurrentPageSubPath();
