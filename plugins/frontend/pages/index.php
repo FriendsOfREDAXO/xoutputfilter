@@ -408,6 +408,7 @@ if ($func == 'add' || $func == 'edit')
     $select->addOption($this->i18n('xoutputfilter_frontend_insertbefore2'), 2);
     $select->addOption($this->i18n('xoutputfilter_frontend_insertbefore3'), 3);
     $select->addOption($this->i18n('xoutputfilter_frontend_insertbefore4'), 4);
+    $select->addOption($this->i18n('xoutputfilter_frontend_insertbefore5'), 5);
     $select->setSize(1);
     $select->setSelected($Values['insertbefore']);
     $n['field'] = $field->get();
