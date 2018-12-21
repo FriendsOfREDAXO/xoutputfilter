@@ -34,6 +34,7 @@ xoutputfilter_frontend_insertbefore1 = infoga före markören
 xoutputfilter_frontend_insertbefore2 = Ersätt markör med värde
 xoutputfilter_frontend_insertbefore3 = PREG_REPLACE, regular expression
 xoutputfilter_frontend_insertbefore4 = Kör PHP-kod
+xoutputfilter_frontend_insertbefore5 = PHP med parametrar
 
 xoutputfilter_frontend_categories = aktiv i följande kategorier<br><p class="help-block rex-note">flertalsurval med <kbd>CTRL</kbd> eller <kbd>CMD</kbd></p>
 xoutputfilter_frontend_excludeids = Inte aktiv vid följande sid-IDs
