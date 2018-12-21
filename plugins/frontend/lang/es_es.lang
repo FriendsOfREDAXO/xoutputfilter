@@ -34,6 +34,7 @@ xoutputfilter_frontend_insertbefore1 = insertar en frente del marcador
 xoutputfilter_frontend_insertbefore2 = Reemplazar marcador
 xoutputfilter_frontend_insertbefore3 = PREG_REPLACE, expresión regular
 xoutputfilter_frontend_insertbefore4 = Ejecutar código PHP
+xoutputfilter_frontend_insertbefore5 = PHP con parámetros
 
 xoutputfilter_frontend_categories = activo en las siguientes categorías<br><p class="help-block rex-note">Selección múltiple con <kbd>CTRL</kbd> o <kbd>CMD</kbd></p>
 xoutputfilter_frontend_excludeids = No está activo para los siguientes Id's de página
