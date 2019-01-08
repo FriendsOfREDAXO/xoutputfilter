@@ -310,7 +310,7 @@ class xoutputfilter
 
         // Excluded-Categories aus Konfiguration übergehen
         $excludecats = rex_addon::get('xoutputfilter')->getConfig('excludecats');
-        if (xoutputfilter::excludeCategory($excludecats, $categoryid)) {
+        if ($excludecats && xoutputfilter::excludeCategory($excludecats, $categoryid)) {
             return;
         }
 
