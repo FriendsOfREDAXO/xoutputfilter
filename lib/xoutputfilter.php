@@ -294,7 +294,7 @@ class xoutputfilter
     {
         $starttime = microtime(true);
         $replcount = 0;
-        $categoryid = 0;
+        $categoryid = -1;
 
         // aktuelle Sprache, Artikel-Id und Category-Id
         $clang = rex_clang::getCurrentId();
