@@ -16,8 +16,21 @@ class xoutputfilter
      */
     public static function get($placeholder, $lang = '')
     {
-        $output = '';
-        return $output;
+        if (trim($placeholder) == '') 
+        {
+            return $placeholder;
+        }
+        if (!$lang)
+        {
+            $lang = \rex_clang::getCurrentId();
+        }       
+        $sql = \rex_sql::factory();
+        $sql->setQuery('SELECT `html` FROM ' . \rex::getTable('xoutputfilter') . ' WHERE lang = :lang AND `marker` = :marker', ['lang' => $lang, 'marker' => trim($placeholder)]);
+        if ($sql->getRows() == 1 && trim($sql->getValue('html')) != '') 
+        {
+            return self::replace($placeholder, $sql->getValue('html'));
+        }
+        return false;
     }
 
     /**
