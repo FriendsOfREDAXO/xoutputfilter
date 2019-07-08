@@ -28,7 +28,7 @@ class xoutputfilter
         $sql->setQuery('SELECT `html` FROM ' . \rex::getTable('xoutputfilter') . ' WHERE lang = :lang AND `marker` = :marker', ['lang' => $lang, 'marker' => trim($placeholder)]);
         if ($sql->getRows() == 1 && trim($sql->getValue('html')) != '') 
         {
-            return self::replace($placeholder, $sql->getValue('html'));
+            return self::replace($sql->getValue('html'));
         }
         return false;
     }
@@ -41,8 +41,9 @@ class xoutputfilter
      *
      * @return string
      */
-    public static function replace($html, $lang = '')
-    {
+    public static function replace($html)
+    {   
+        $html = nl2br($html);
         $output = trim($html);
         return $output;
     }
