@@ -35,6 +35,34 @@ echo xoutputfilter::replace($my_content, rex_clang::getCurrentId());
 ?>
 ```
 
+## Beispiel: PDF-Dateien, die in einem Editor verlinkt sind, umleiten ##
+
+**Parameter für die Frontend-Ersetzung**
+
+Feld|Wert
+------------ | -------------
+Name|`download_pdf`
+Beschreibung|`Ersetzt Link-Pfade zu PDFs im Media-Ordner und lässt den Download über den Media Manager laufen
+aktiviert|`ja`
+Ersetzungstyp|`PREG_REPLACE`
+Marker|`/href=\"((http.*)?\/\/(www\.)?meine-domain\.de)?\/media\/([^"]*)\.pdf\"/iU`
+Ersetzung|`href="/media/download/$4.pdf"`
+aktiv bei allen Kategorien|`ja`
+nur einmal einfügen|`nein`
+
+**Media-Manager-Profil**
+
+Im Media Manager ein Profil namens `download` anlegen und als Effekt hinzufügen:
+
+Feld|Wert
+------------ | -------------
+Effektreihenfolge|`Am Anfang`
+Effekt|`header`
+Download|download
+Cache-Control|no_cache
+
+/cc @phoebusryan 
+
 ---
 
 ## Credits ##
