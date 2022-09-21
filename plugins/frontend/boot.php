@@ -8,7 +8,7 @@ if (rex::isBackend() && is_object(rex::getUser())) {
     // Sprachen als Subnavigation einfügen
     rex_extension::register('PAGES_PREPARED', function () {
 
-        $clang_id = str_replace('clang', '', rex_be_controller::getCurrentPagePart(3));
+        $clang_id = str_replace('clang', '', rex_be_controller::getCurrentPagePart(3, ''));
         $page = rex_be_controller::getPageObject('xoutputfilter/frontend');
 
         if (is_object($page) and rex_clang::count() > 1) {

@@ -35,7 +35,7 @@ $func = rex_request('func', 'string', '');
 $xfunc = rex_request('xfunc', 'string', '');
 $oid = rex_request('oid', 'int', -1);
 $filter = rex_request('filter', 'int', 0);
-$clang = (int)str_replace('clang', '', rex_be_controller::getCurrentPagePart(3));
+$clang = (int)str_replace('clang', '', rex_be_controller::getCurrentPagePart(3, ''));
 $clang = rex_clang::exists($clang) ? $clang : rex_clang::getStartId();
 rex_clang::setCurrentId($clang);
 $formsubmit = rex_request('formsubmit', 'string', '');
