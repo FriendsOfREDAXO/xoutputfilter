@@ -8,10 +8,10 @@ if (rex::isBackend() && is_object(rex::getUser())) {
     // Sprachen als Subnavigation einfügen
     rex_extension::register('PAGES_PREPARED', function () {
 
-        $clang_id = str_replace('clang', '', rex_be_controller::getCurrentPagePart(3, ''));
         $page = rex_be_controller::getPageObject('xoutputfilter/frontend');
 
         if (is_object($page) and rex_clang::count() > 1) {
+            $clang_id = str_replace('clang', '', (string) rex_be_controller::getCurrentPagePart(3, ''));
             foreach (rex_clang::getAll() as $id => $clang) {
                 if (rex::getUser()->getComplexPerm('clang')->hasPerm($id)) {
                     $page->addSubpage((new rex_be_page('clang' . $id, $clang->getName()))
