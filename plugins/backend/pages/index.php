@@ -4,7 +4,7 @@ function xoutputfilterBackendCheckDup($value, $lang = '')
     $table = rex::getTable('xoutputfilter');
     $oid = rex_request('oid', 'int', '');
 
-    $clang = (int)str_replace('clang', '', rex_be_controller::getCurrentPagePart(3));
+    $clang = (int)str_replace('clang', '', (string) rex_be_controller::getCurrentPagePart(3));
     $clang = rex_clang::exists($clang) ? $clang : rex_clang::getStartId();
     if ($lang <> '') {
         $clang = $lang;
