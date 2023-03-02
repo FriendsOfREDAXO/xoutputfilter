@@ -1,9 +1,8 @@
 package: xoutputfilter
-version: '3.0.0-beta1'
+version: '3.0.0'
 author: 'Friends Of REDAXO'
 supportpage: https://github.com/FriendsOfREDAXO/xoutputfilter
 info: 'Idee und Realisierung der ersten Version: Andreas Eberhard/aesoft.de und Peter Bickel/polarpixel.de'
-compile: 0
 
 page:
 
