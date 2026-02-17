@@ -1,6 +1,6 @@
 # XOutputFilter-Addon für REDAXO 5 #
 
-‼️ Die Emtwicklung dieses AddOns wurde eingestellt. Der Nachfolger ist das Snippets-AddOn
+‼️ Die Entwicklung dieses AddOns wurde eingestellt. Der Nachfolger ist das Snippets-AddOn
 
 Mit dem Addon XOutputFilter hat man die Möglichkeit über den Extension-Point OUTPUT_FILTER die Ausgabe der REDAXO-Seite zu beeinflussen sowohl im Frontend als auch im Backend.
 
